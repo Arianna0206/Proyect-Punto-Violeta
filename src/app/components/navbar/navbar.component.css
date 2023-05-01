@@ -1,0 +1,24 @@
+.navbar {
+    /* padding: 1.5rem 5rem; */
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    transition: 1s;
+    background-color: #DEC4E1;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-family: Raleway;
+    margin-right: 120px;
+}
+
+
+
+
+
+  
