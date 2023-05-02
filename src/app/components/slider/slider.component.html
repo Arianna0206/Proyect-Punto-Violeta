@@ -1,7 +1,8 @@
 <div class="image-container" id="violeta">
   <img src="../../assets/images/puntoVioleta.png" alt="slide-1" class="img-violeta img-responsive img-relative">
-    <div *ngFor="let point of points" [style.left]="point.left" [style.top]="point.top" [ngClass]="{'point': true, 'pulsate': point.isPulsating}" (mouseover)="showInfo(point)" class="pulse"></div>
-    <div *ngFor="let point of points" [ngClass]="{'info': true, 'visible': point.isInfoVisible}" [style.left]="point.left" [style.top]="point.top" (mouseover)="point.isInfoVisible=true" (mouseout)="point.isInfoVisible=false">
-      {{point.description}}
-    </div>
+  <div *ngFor="let point of points" [style.left]="point.left" [style.top]="point.top" [ngClass]="{'point': true, 'pulsate': point.isPulsating}" (mouseover)="showInfo(point)" class="pulse"></div>
+  <div *ngFor="let point of points" [ngClass]="{'info': true, 'visible': point.isInfoVisible}" [style.left]="point.left" [style.top]="point.top" (mouseover)="point.isInfoVisible=true" (mouseout)="point.isInfoVisible=false">
+    <div class="text-top frase1">{{point.textTop}}</div>
+    <div class="text-bottom">{{point.textBottom}}</div>
+  </div>
 </div>

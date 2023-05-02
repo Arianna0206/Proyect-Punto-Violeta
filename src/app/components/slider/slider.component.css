@@ -17,10 +17,9 @@ img {
     position: absolute;
     border-radius: 50%;
     background: #C51594;
-   
     box-shadow: 0px 0px 10px 10px #db62e1;
   }
-  
+
 .pulse {
     width: 22px;
     height: 22px;
@@ -68,4 +67,15 @@ img {
   
   .info.visible {
     visibility: visible;
+  }
+
+  .text-top{
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    font-family: Raleway;
+  }
+
+  .text-bottom{
+    font-family: Raleway;
   }
