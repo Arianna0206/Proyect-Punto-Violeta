@@ -1,19 +1,27 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, OnInit, Input, EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })
-export class NavbarComponent {
-  isScrolled = false;
+export class NavbarComponent implements OnInit {
+  @Input() scrollEvent = new EventEmitter();
+  isScrolled: boolean = false; // Agrega la propiedad isScrolled
 
-  @HostListener('window:scroll', [])
+  ngOnInit() {
+    this.scrollEvent.subscribe(() => {
+      this.onWindowScroll();
+    });
+  }
+
+  @HostListener("window:scroll", [])
   onWindowScroll() {
-    if (window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop > 100) {
-      this.isScrolled = true;
-    } else if (this.isScrolled && window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop < 10) {
+    if (window.pageYOffset === 0) {
       this.isScrolled = false;
+    } else {
+      this.isScrolled = true;
     }
   }
 }
+
