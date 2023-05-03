@@ -1,0 +1,124 @@
+.card-columns {
+    display: flex;
+  }
+  
+  
+.card {
+    border-radius: 20px; /* agrega borde redondeado */
+    margin: 0 90px 0 90px;
+}
+  
+.container-somos {
+    background: linear-gradient(180deg, #DEC4E1 0%, rgba(222, 196, 225, 0) 100%);
+}
+  
+.quienes {
+    height: 100rem;
+}
+
+.quienes-header {
+    position: relative;
+}
+  
+.quienes-body {
+    margin-top: 20px; /* para dejar espacio entre el header y el body */
+}
+  
+.card-body .col-md-6 {
+    position: relative;
+}
+  
+.card-body .col-md-6 button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+  
+.boton1{
+    background-color: rgba(90, 23, 113, 1);
+    border-color: rgba(90, 23, 113, 1);
+    padding-right: 1.3rem;
+    padding-left: 1.3rem;
+    border-radius: 10px;
+    position: absolute;
+    right: 0;
+}
+
+.boton1:hover{
+    background-color: rgba(222, 196, 225, 1);
+}
+
+.card button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}  
+  
+.text0:hover{
+    color: black;
+}
+
+/* Agrega la fuente Dancing Script */
+@font-face {
+    font-family: 'Dancing Script';
+    src: url('../../../assets/fonts/DancingScript-VariableFont_wght.ttf');
+}
+
+.text1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 35px;
+    color: rgba(168, 64, 195, 1);
+    margin: 1rem 0 0 2rem;
+}
+
+.text2{
+    font-family: Raleway;
+    margin: 1rem 0 0 2rem;
+}
+
+.text3{
+    font-family: 'Dancing Script', cursive;
+    color: rgba(168, 64, 195, 1);
+    margin: 1rem 0 2rem 3rem;
+    font-size: 25px;
+}
+
+.t1{
+    width: 130px;
+    height: 150px;
+    background: linear-gradient(rgba(233, 238, 248, 1), white);
+    margin-bottom: 30px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px; /* ajuste este valor según su necesidad */
+}
+
+.t1 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 200px; /* ajuste este valor según su necesidad */
+}
+
+.card-text {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-family: Raleway;
+    font-size: 20px;
+  }
+  
+
+  
+
+
+
+  
+  
+
+
+  
+
+
+  
+  

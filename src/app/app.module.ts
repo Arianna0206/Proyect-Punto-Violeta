@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SliderComponent } from './components/slider/slider.component';
+import { ContentCardComponent } from './components/content-card/content-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    SliderComponent
+    SliderComponent,
+    ContentCardComponent
   ],
   exports: [NavbarComponent],
   imports: [
