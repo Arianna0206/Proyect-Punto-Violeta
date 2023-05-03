@@ -1,13 +1,16 @@
-<div class="container-somos">
-  <div class="card quienes">
+<div class="grid-container somos">
+  <div class="card quienes" #cardPrincipal>
     <div class="card-body">
       <div class="row">
         <div class="col-md-6">
           <div class="quienes-header">
             <p class="text1">¿Quiénes somos?</p>
-            <button class="btn btn-primary boton1 text0">></button>
+            <button class="btn btn-primary boton1 text0" (click)="vaciarCardPrincipal()">></button>
+            
+            <button *ngIf="cardVacia" class="btn btn-primary boton1 text0" (click)="volverCardPrincipal()"><</button>
           </div>
-          <div class="quienes-body">
+          <p *ngIf="cardVacia" class="text2">La tarjeta ha sido vaciada</p>
+          <div class="quienes-body" *ngIf="!cardVacia">
             <p class="text2">Somos el Punto Violeta de la Universidad Técnica Particular de Loja, 
                avalado por la Cátedra UNESCO de Cultura y Educación para Paz. Nuestro 
                objetivo es promover una cultura de paz y prevenir y atender la violencia 
@@ -120,7 +123,7 @@
                         </div>
                     </div>
                 </div>
-                </div>
+            </div>
           </div>
         </div>
         <div class="col-md-6"></div>

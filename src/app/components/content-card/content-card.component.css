@@ -8,12 +8,16 @@
     margin: 0 90px 0 90px;
 }
   
-.container-somos {
+.somos {
     background: linear-gradient(180deg, #DEC4E1 0%, rgba(222, 196, 225, 0) 100%);
 }
   
 .quienes {
-    height: 100rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-left: white;
+    border-right: white;
+    border-bottom: white;
 }
 
 .quienes-header {
@@ -23,6 +27,13 @@
 .quienes-body {
     margin-top: 20px; /* para dejar espacio entre el header y el body */
 }
+  
+.card-vacia {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+  }
+  
   
 .card-body .col-md-6 {
     position: relative;
@@ -40,8 +51,8 @@
     padding-right: 1.3rem;
     padding-left: 1.3rem;
     border-radius: 10px;
-    position: absolute;
     right: 0;
+    position: fixed;
 }
 
 .boton1:hover{
