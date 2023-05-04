@@ -6,15 +6,13 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SliderComponent } from './components/slider/slider.component';
 import { ContentCardComponent } from './components/content-card/content-card.component';
-import { CardResourcesComponent } from './components/card-resources/card-resources.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     SliderComponent,
-    ContentCardComponent,
-    CardResourcesComponent
+    ContentCardComponent
   ],
   exports: [NavbarComponent],
   imports: [
