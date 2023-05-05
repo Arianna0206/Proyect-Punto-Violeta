@@ -1,0 +1,66 @@
+.container-fluid.bg-image {
+    position: relative; /* para que los elementos dentro se puedan posicionar en relación a este contenedor */
+  }
+  
+  .container-fluid.bg-image img {
+    position: absolute;
+    top: 0;
+    left: 5rem;
+    width: 90%;
+    height: 40vw;
+    object-fit: cover; /* para que la imagen se ajuste al tamaño del contenedor */
+  }
+  
+  .container-fluid.bg-image .row {
+    position: relative; /* para que los elementos dentro se puedan posicionar en relación a este contenedor */
+    z-index: 1; /* para asegurar que los elementos dentro aparezcan por encima de la imagen de fondo */
+    height: 100%;
+    display: flex; /* para hacer que los elementos dentro estén en línea */
+    align-items: center; /* para centrar los elementos verticalmente */
+  }
+  
+  .container-fluid.bg-image .col-md-6 {
+    color: black; /* para cambiar el color del texto a blanco */
+    padding: 0 30px; /* para agregar algo de espacio alrededor del texto */
+  }
+
+  h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 29px;
+    margin-top: 3rem;
+    margin-left: 6rem;
+    color: rgba(168, 64, 195, 1);
+  }
+
+  @font-face {
+    font-family: 'Raleway';
+    src: url('../../../assets/fonts/Raleway-Italic-VariableFont_wght.ttf');
+}
+
+  p{
+    margin-left: 6rem;
+    font-family: 'Raleway';
+  }
+  
+  .container-fluid.bg-image .text-left {
+    text-align: left !important; /* para asegurarse de que el texto esté alineado a la izquierda */
+  }
+
+  #colab{
+    margin-right: -15rem;
+  }
+
+  .text1{
+    white-space: nowrap;
+  }
+
+  .text2{
+    margin-bottom: 2rem;
+  }
+
+
+ 
+
+  
+  
+  

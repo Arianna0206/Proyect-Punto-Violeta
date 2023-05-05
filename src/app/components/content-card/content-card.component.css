@@ -112,6 +112,11 @@
     max-height: 200px; /* ajuste este valor según su necesidad */
 }
 
+.t5{
+    font-family: Raleway;
+    font-size: 17px;
+}
+
 .tipos{
     text-align: center;
 }
