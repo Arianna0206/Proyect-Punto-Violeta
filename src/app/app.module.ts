@@ -7,6 +7,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { SliderComponent } from './components/slider/slider.component';
 import { ContentCardComponent } from './components/content-card/content-card.component';
 import { CollaboratorsCardComponent } from './components/collaborators-card/collaborators-card.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { CollaboratorsCardComponent } from './components/collaborators-card/coll
     NavbarComponent,
     SliderComponent,
     ContentCardComponent,
-    CollaboratorsCardComponent
+    CollaboratorsCardComponent,
+    FooterComponent
   ],
   exports: [NavbarComponent],
   imports: [
