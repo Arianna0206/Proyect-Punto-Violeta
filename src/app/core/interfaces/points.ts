@@ -1,12 +1,11 @@
 export interface Point {
-    x: number;
-    y: number;
-    left: string;
-    top: string;
-    isInfoVisible: boolean;
-    isPulsating: boolean;
-    textTop: string; // agregar propiedad textTop
-    textBottom: string; // agregar propiedad textBottom
-    bottom: string; // agregar propiedad bottom
-  }
-  
+  x: number;
+  y: number;
+  left: string;
+  top: string;
+  bottom: string;
+  isPulsating: boolean;
+  textTop: string;
+  textBottom: string;
+  infoState: number; // nueva propiedad para indicar el estado del punto
+}

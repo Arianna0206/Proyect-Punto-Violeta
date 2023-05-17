@@ -6,7 +6,7 @@
 }
   
 img {
-    width: 100%;
+    width: 100%;  
 }
 
 .points {
@@ -34,16 +34,17 @@ img {
     }
   }
   
-.spinner-grow {
-    position: absolute;
-    width: 1rem;
-    height: 1rem;
-    margin: 3rem 0 0 3rem;
-  }
+
   
 .pulse {
     animation: pulse 1s infinite;
   }
+
+  .pulse.active {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
   
   @keyframes pulse {
     0% {
@@ -58,11 +59,12 @@ img {
   }
   .info {
     position: absolute;
-    background-color: white;
     padding: 0.5rem;
     border-radius: 0.5rem;
     visibility: hidden;
     z-index: 1;
+   
+    
   }
   
   .info.visible {
@@ -73,9 +75,22 @@ img {
     font-weight: bold;
     display: flex;
     justify-content: center;
-    font-family: Raleway;
+    font-family: 'Dancing Script', cursive;
+    background: linear-gradient(45deg,#1d2b64, #aa076b );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5rem;
+    text-align: justify;
   }
 
   .text-bottom{
-    font-family: Raleway;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.3rem;
   }
+
+  .info.visible .text-bottom {
+    display: block;
+  }
+
