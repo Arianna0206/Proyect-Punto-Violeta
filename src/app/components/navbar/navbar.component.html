@@ -1,8 +1,8 @@
-<nav class="navbar navbar-expand" [ngClass]="{'scrolled': isScrolled}">
-    <div class="nav navbar-nav text">
-        <a class="nav-item nav-link" href="../slider/slider.component.html" aria-current="page">Punto Violeta</a>
-        <a class="nav-item nav-link" href="../content-card">Denuncia</a>
-        <a class="nav-item nav-link" href="#">Galeria</a>
-        <a class="nav-item nav-link" routerLink="./footer/footer.component">Información</a>
-    </div>
+<nav class="navbar navbar-expand" [ngClass]="{'scrolled': addClass}">
+  <div class="nav navbar-nav text">
+    <a class="nav-item nav-link" routerLink="/slider" routerLinkActive="active" fragment="violeta">Punto Violeta</a>
+    <a class="nav-item nav-link" routerLink="/content-card" routerLinkActive="active" fragment="content">Denuncia</a>
+    <a class="nav-item nav-link" routerLink="/collaborators-card" routerLinkActive="active">Galeria</a>
+    <a class="nav-item nav-link" routerLink="/footer" routerLinkActive="active" fragment="contactos">Información</a>
+  </div>
 </nav>

@@ -6,6 +6,14 @@
 .card {
     border-radius: 20px; /* agrega borde redondeado */
 }
+
+.card-title {
+    font-size: 14px; /* Ajusta el tamaño de fuente del título de la card según tus preferencias */
+}
+
+.card-body .text4 {
+    font-size: 12px; /* Ajusta el tamaño de fuente del texto dentro de la card según tus preferencias */
+}
   
 .somos {
     background: linear-gradient(180deg, #DEC4E1 0%, rgba(222, 196, 225, 0) 100%);
@@ -114,7 +122,7 @@
 
 .t5{
     font-family: Raleway;
-    font-size: 17px;
+    font-size: 14px;
 }
 
 .tipos{
@@ -128,11 +136,12 @@
   }
 
 #principal{
-    width: 85vw;
+    width: 80vw;
     padding-left: 9rem;
     background-color: rgba(55, 34, 84, 1);
     justify-content:center;
     margin-bottom: 2rem;
+    
 }
 
 @media (max-width: 700px) {
@@ -156,6 +165,10 @@
     
 }
 
+.card-title#text1 {
+    font-size: 12px; /* Ajusta el tamaño de fuente del título "Recursos Disponibles" según tus preferencias */
+  }
+
 #text1{
     font-family: 'Dancing Script', cursive;
     font-size: 29px;
@@ -173,6 +186,8 @@
 .text4{
     font-family: Raleway;
 }
+
+
 
 
   
