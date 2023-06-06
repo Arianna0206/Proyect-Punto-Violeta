@@ -1,8 +1,6 @@
-<app-navbar></app-navbar>
+<app-navbar (scrollEvent)="scrollToSection('navbar')"></app-navbar>
+<app-slider (scrollEvent)="scrollToSection('violeta')"></app-slider>
+<app-content-card (scrollEvent)="scrollToSection('denuncia')"></app-content-card>
+<app-collaborators-card (scrollEvent)="scrollToSection('collaborators')"></app-collaborators-card>
+<app-footer (scrollEvent)="scrollToSection('contactos')"></app-footer>
 
-<app-slider id="violeta"></app-slider>
-<app-content-card id="content"></app-content-card>
-<app-collaborators-card></app-collaborators-card>
-<app-footer id="contactos"></app-footer>
-
-<app-footer></app-footer>

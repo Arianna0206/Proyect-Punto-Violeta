@@ -1,35 +1,30 @@
 .navbar {
-    /* padding: 1.5rem 5rem; */
-    display: flex;
-    align-items: center;
-    height: 5rem;
-    transition: 1s;
-    background-color: #DEC4E1;
-    width: 100%;
-    justify-content: flex-end;
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  transition: 1s;
+  background-color: #DEC4E1;
+  width: 100%;
+  justify-content: flex-end;
 }
 
 .nav-item {
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-    font-family: Raleway;
-    margin-right: 120px;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-family: Raleway;
+  margin-right: 120px;
+  cursor: pointer;
 }
 
-nav.scrolled {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 999;
-  }
+.scrolled .navbar {
+  display: none;
+}
 
-
-
-
-
-
-
-
-  
+.scrolled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}

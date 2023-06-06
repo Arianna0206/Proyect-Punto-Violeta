@@ -1,8 +1,9 @@
-<nav class="navbar navbar-expand" [ngClass]="{'scrolled': addClass}">
+<nav class="navbar navbar-expand" [ngClass]="{'scrolled': isScrolled}">
   <div class="nav navbar-nav text">
-    <a class="nav-item nav-link" routerLink="/slider" routerLinkActive="active" fragment="violeta">Punto Violeta</a>
-    <a class="nav-item nav-link" routerLink="/content-card" routerLinkActive="active" fragment="content">Denuncia</a>
-    <a class="nav-item nav-link" routerLink="/collaborators-card" routerLinkActive="active">Galeria</a>
-    <a class="nav-item nav-link" routerLink="/footer" routerLinkActive="active" fragment="contactos">Información</a>
+    <a class="nav-item nav-link" (click)="scrollEvent.emit('violeta')">Punto Violeta</a>
+    <a class="nav-item nav-link" (click)="scrollEvent.emit('denuncia')">Denuncia</a>
+    <a class="nav-item nav-link" (click)="scrollEvent.emit('collaborators')">Galeria</a>
+    <a class="nav-item nav-link" (click)="scrollEvent.emit('contactos')">Información</a>
   </div>
 </nav>
+
