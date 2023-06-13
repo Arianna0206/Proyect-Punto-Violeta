@@ -1,6 +1,15 @@
-<app-navbar (scrollEvent)="scrollToSection('navbar')"></app-navbar>
+<app-navbar (ocultarContenido)="ocultarContenido()"></app-navbar>
 <app-slider (scrollEvent)="scrollToSection('violeta')"></app-slider>
-<app-content-card (scrollEvent)="scrollToSection('denuncia')"></app-content-card>
-<app-collaborators-card (scrollEvent)="scrollToSection('collaborators')"></app-collaborators-card>
-<app-footer (scrollEvent)="scrollToSection('contactos')"></app-footer>
 
+<!-- Contenido adicional a ocultar -->
+<div *ngIf="mostrarContenido">
+  <app-content-card (scrollEvent)="scrollToSection('quienes-somos')"></app-content-card>
+  <app-recursos (scrollEvent)="scrollToSection('recursos')"></app-recursos>
+  <!-- Otros componentes -->
+</div>
+
+<div *ngIf="!mostrarContenido">
+  <app-galeria (scrollEvent)="scrollToSection('galeria')"></app-galeria>
+</div>
+
+<app-footer (scrollEvent)="scrollToSection('contactos')"></app-footer>

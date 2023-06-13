@@ -1,5 +1,4 @@
-import { Component, ViewChild, ElementRef} from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-content-card',
@@ -9,7 +8,12 @@ import { Router } from '@angular/router';
 
 
 export class ContentCardComponent{
-  cardVacia:boolean = false;
+
+@Output() scrollEvent = new EventEmitter<any>();
+
+
+
+cardVacia:boolean = false;
 
 vaciarCardPrincipal() {
   this.cardVacia = true;

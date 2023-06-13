@@ -1,8 +1,19 @@
 .card-columns {
     display: flex;
   }
-  
-  
+
+  @font-face {
+    font-family: 'Dancing Script';
+    src: url('../../../assets/fonts/DancingScript-VariableFont_wght.ttf');
+}
+
+.text1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 35px;
+    color: rgba(168, 64, 195, 1);
+    margin: 1rem 0 0 2rem;
+}
+
 .card {
     border-radius: 20px; /* agrega borde redondeado */
 }
@@ -77,19 +88,6 @@
     color: black;
 }
 
-/* Agrega la fuente Dancing Script */
-@font-face {
-    font-family: 'Dancing Script';
-    src: url('../../../assets/fonts/DancingScript-VariableFont_wght.ttf');
-}
-
-.text1{
-    font-family: 'Dancing Script', cursive;
-    font-size: 35px;
-    color: rgba(168, 64, 195, 1);
-    margin: 1rem 0 0 2rem;
-}
-
 .text2{
     font-family: Raleway;
     margin: 1rem 0 0 2rem;
@@ -106,18 +104,18 @@
     width: 130px;
     height: 150px;
     background: linear-gradient(rgba(233, 238, 248, 1), white);
-    margin-bottom: 30px;
-    margin-left: 10px;
+    margin-bottom: 50%;
+    margin-left: 30%;
     display: flex;
     flex-direction: column;
-    max-width: 400px; /* ajuste este valor según su necesidad */
+    max-width: 800%; /* ajuste este valor según su necesidad */
 }
 
 .t1 img {
     width: 100%;
     height: auto;
     object-fit: cover;
-    max-height: 200px; /* ajuste este valor según su necesidad */
+    max-height: 800%; /* ajuste este valor según su necesidad */
 }
 
 .t5{
@@ -129,63 +127,8 @@
     text-align: center;
 }
 
-#contenido {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
 
-#principal{
-    width: 80vw;
-    padding-left: 9rem;
-    background-color: rgba(55, 34, 84, 1);
-    justify-content:center;
-    margin-bottom: 2rem;
-    
-}
 
-@media (max-width: 700px) {
-    #contenido {
-      text-align: center;
-    }
-}
-
-.imagenes img {
-    max-width: 100%;
-    width: 100%;
-    height: auto;
-  }
-
-@media (max-width: 700px) {
-    #principal{
-        width: 100%;
-        height: 100%;
-        padding-left: 0;
-    }
-    
-}
-
-.card-title#text1 {
-    font-size: 12px; /* Ajusta el tamaño de fuente del título "Recursos Disponibles" según tus preferencias */
-  }
-
-#text1{
-    font-family: 'Dancing Script', cursive;
-    font-size: 29px;
-    color: white;
-}
-
-#card-0{
-    margin-top: 2.4rem;
-}
-
-#card-1{
-    background-color: rgba(55, 34, 84, 1);
-}
-
-.text4{
-    font-family: Raleway;
-}
 
 
 

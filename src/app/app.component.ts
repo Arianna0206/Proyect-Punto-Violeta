@@ -10,11 +10,21 @@ import { ViewportScroller } from '@angular/common';
 
 export class AppComponent {
   title = 'puntoVioleta';
-
-  constructor(private viewportScroller: ViewportScroller) { }
+  
+  mostrarContenido: boolean = true;
+  scrollEvent: string | undefined; // Agrega esta propiedad
 
   scrollToSection(sectionId: string) {
-    this.viewportScroller.scrollToAnchor(sectionId);
+    if (sectionId === 'violeta' || sectionId === 'quienes-somos' || sectionId === 'recursos') {
+      this.mostrarContenido = true;
+    } else {
+      this.mostrarContenido = false;
+    }
+    this.scrollEvent = sectionId; // Actualiza el valor de la propiedad scrollEvent
   }
-  
+
+  ocultarContenido() {
+    this.mostrarContenido = false;
+  }
+   
 }

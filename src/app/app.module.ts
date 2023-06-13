@@ -8,6 +8,8 @@ import { SliderComponent } from './components/slider/slider.component';
 import { ContentCardComponent } from './components/content-card/content-card.component';
 import { CollaboratorsCardComponent } from './components/collaborators-card/collaborators-card.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { RecursosComponent } from './components/recursos/recursos.component';
+import { GaleriaComponent } from './components/galeria/galeria.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { FooterComponent } from './components/footer/footer.component';
     SliderComponent,
     ContentCardComponent,
     CollaboratorsCardComponent,
-    FooterComponent
+    FooterComponent,
+    RecursosComponent,
+    GaleriaComponent
   ],
   imports: [
     BrowserModule,

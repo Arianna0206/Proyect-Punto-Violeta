@@ -1,4 +1,4 @@
-import { Component, HostListener, OnInit, Input, EventEmitter } from '@angular/core';
+import { Component, HostListener, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Router } from '@angular/router';
 import { Navbar } from 'src/app/core/interfaces/navbar';
 import { ViewportScroller } from '@angular/common';
@@ -8,7 +8,12 @@ import { ViewportScroller } from '@angular/common';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })
+
 export class NavbarComponent implements OnInit {
+  @Output() ocultarContenido = new EventEmitter<void>();
+
+  isOffcanvasOpen = false;
+
   @Input() scrollEvent = new EventEmitter();
   isScrolled: boolean = false;
 
@@ -18,7 +23,11 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit() {
     this.scrollEvent.subscribe((sectionId: string) => {
-      this.scrollToSection(sectionId);
+      if (sectionId === 'galeria') {
+        this.emitirOcultarContenido();
+      } else {
+        this.scrollToSection(sectionId);
+      }
     });
   }
 
@@ -36,5 +45,13 @@ export class NavbarComponent implements OnInit {
     if (element) {
       this.viewportScroller.scrollToAnchor(sectionId);
     }
+  }
+
+  emitirOcultarContenido() {
+    this.ocultarContenido.emit();
+  }
+
+  toggleOffcanvas() {
+    this.isOffcanvasOpen = !this.isOffcanvasOpen;
   }
 }
