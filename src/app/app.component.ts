@@ -12,7 +12,7 @@ export class AppComponent {
   title = 'puntoVioleta';
   
   mostrarContenido: boolean = true;
-  scrollEvent: string | undefined; // Agrega esta propiedad
+  scrollEvent: string | undefined;
 
   scrollToSection(sectionId: string) {
     if (sectionId === 'violeta' || sectionId === 'quienes-somos' || sectionId === 'recursos') {
@@ -20,11 +20,11 @@ export class AppComponent {
     } else {
       this.mostrarContenido = false;
     }
-    this.scrollEvent = sectionId; // Actualiza el valor de la propiedad scrollEvent
+    this.scrollEvent = sectionId;
   }
 
   ocultarContenido() {
     this.mostrarContenido = false;
   }
-   
 }
+

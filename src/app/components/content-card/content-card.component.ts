@@ -7,21 +7,19 @@ import { Component, Output, EventEmitter } from '@angular/core';
 })
 
 
-export class ContentCardComponent{
+export class ContentCardComponent {
+  @Output() scrollEvent = new EventEmitter<string>();
 
-@Output() scrollEvent = new EventEmitter<any>();
+  cardVacia: boolean = false;
 
+  vaciarCardPrincipal() {
+    this.cardVacia = true;
+  }
 
-
-cardVacia:boolean = false;
-
-vaciarCardPrincipal() {
-  this.cardVacia = true;
+  volverCardPrincipal() {
+    this.cardVacia = false;
+    this.scrollEvent.emit('quienes-somos'); // Emitir evento para mostrar la sección 'quienes-somos'
+  }
 }
 
-volverCardPrincipal() {
-  this.cardVacia = false;
-}
-
-}
 
