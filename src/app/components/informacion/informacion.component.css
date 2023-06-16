@@ -1,0 +1,78 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Una sola columna en dispositivos pequeños */
+    place-items: center;
+  }
+  
+  @media (max-width: 700px) {
+    /* Media Query para dispositivos con un ancho mínimo de 700px */
+    .grid-container {
+      grid-template-columns: 1fr; /* Mantener una sola columna en dispositivos más grandes */
+      max-width: 70%; /* Establecer un ancho máximo para el contenedor */
+      margin: 0 1rem; /* Centrar el contenedor horizontalmente */
+    }
+  }
+  
+     
+   .nombres {
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .full-screen-title {
+ /* Establece el ancho del título al 100% del ancho de su contenedor */
+    text-align: center;
+    margin: 0;
+    font-family: 'Dancing Script', cursive;
+
+  }
+
+  .text5 {
+    font-family: 'Dancing Script', cursive;
+    color: #A840C3;
+    text-align: center;
+  }
+
+  .text6{
+    font-family: 'Dancing Script', cursive;
+    color: #585151B2;
+    margin: 0;
+  }
+
+  .text7{
+    margin: 2rem 3rem;
+    text-align: justify;
+    font-family: Raleway;
+  }
+
+ .text8 {
+    font-family: 'Dancing Script', cursive;
+    color: #A840C3;
+    font-size: 2rem;
+    margin: 2rem 3rem;
+ }
+
+ .text9 {
+    text-align: justify;
+    font-family: Raleway;
+    margin: 2rem 3rem;
+ }
+
+ .text10 {
+    font-family: 'Dancing Script', cursive;
+    color: black;
+    font-size: 2rem;
+    margin: 2rem 3rem;
+ }
+
+ .text11 {
+    text-align: justify;
+    font-family: Raleway;
+    margin: 2.5rem 3rem;
+    color: white;
+ }
+
+ #columna{
+    background-color: #A840C3;
+ }
+

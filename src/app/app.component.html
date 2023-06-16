@@ -5,8 +5,10 @@
 <div *ngIf="mostrarContenido">
   <app-content-card (scrollEvent)="scrollToSection('quienes-somos')"></app-content-card>
   <app-recursos (scrollEvent)="scrollToSection('recursos')"></app-recursos>
-  <!-- Otros componentes -->
+  <app-collaborators-card></app-collaborators-card>
 </div>
+
+
 
 <div *ngIf="!mostrarContenido">
   <app-galeria (scrollEvent)="scrollToSection('galeria')"></app-galeria>

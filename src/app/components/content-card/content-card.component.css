@@ -16,6 +16,7 @@
 
 .card {
     border-radius: 20px; /* agrega borde redondeado */
+    height: auto;
 }
 
 .card-title {
@@ -37,6 +38,7 @@
     border-right: white;
     border-bottom: white;
     margin: 0 90px 0 90px;
+    height: auto;
 }
 
 .quienes-header {
@@ -70,7 +72,8 @@
     padding-right: 1.3rem;
     padding-left: 1.3rem;
     border-radius: 10px;
-    right: 0;
+    bottom: 20px; /* Ajusta la distancia desde la parte inferior */
+    right: 20px; /* Ajusta la distancia desde el lado derecho */
     position: fixed;
 }
 
@@ -126,6 +129,30 @@
 .tipos{
     text-align: center;
 }
+
+.nested-card.card1 {
+    width: 80vw; /* Ajusta el valor según tus necesidades */
+    margin: 1rem;
+}
+  
+  
+
+
+  
+
+  
+ 
+  
+  
+  
+
+ 
+  
+ 
+  
+  
+  
+  
 
 
 

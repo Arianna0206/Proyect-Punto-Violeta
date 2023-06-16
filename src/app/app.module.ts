@@ -10,6 +10,7 @@ import { CollaboratorsCardComponent } from './components/collaborators-card/coll
 import { FooterComponent } from './components/footer/footer.component';
 import { RecursosComponent } from './components/recursos/recursos.component';
 import { GaleriaComponent } from './components/galeria/galeria.component';
+import { InformacionComponent } from './components/informacion/informacion.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { GaleriaComponent } from './components/galeria/galeria.component';
     CollaboratorsCardComponent,
     FooterComponent,
     RecursosComponent,
-    GaleriaComponent
+    GaleriaComponent,
+    InformacionComponent
   ],
   imports: [
     BrowserModule,

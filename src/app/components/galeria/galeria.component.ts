@@ -15,13 +15,13 @@ export class GaleriaComponent {
   mostrarGaleria: boolean = true;
   eventos: Evento[] = [
     {
-      titulo: 'Evento en Madrid',
-      descripcion: 'Texto del primer evento...',
+      titulo: 'Evento de Apertura del Punto Violeta en el Consultorio Jurídico Gratuito de la UTPL',
+      descripcion: 'Se encuentra localizado dentro del Edificio Colibrí, en el Parque Central. Durante la mañana del 16 de febrero del 2023 se hicieron actividades de sensibilización sobre la violencia de género. Se ofrecieron datos actuales de Ecuador, juegos para los más pequeños y algunos obsequios como manillas, libretas, etc.',
       imagenes: [
-        '../assets/images/image5.png',
-        '../assets/images/image6.png',
-        '../assets/images/image7.png',
-        '../assets/images/image8.png',
+        '../assets/images/imagen1Evento1.png',
+        '../assets/images/imagen2Evento1.png',
+        '../assets/images/imagen3Evento1.png',
+        '../assets/images/imagen5Evento1.png',
       ],
     },
     
