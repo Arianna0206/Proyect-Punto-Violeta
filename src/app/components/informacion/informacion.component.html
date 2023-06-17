@@ -41,4 +41,49 @@
                             En enero del 2018 el proyecto de Ley Orgánica Integral para prevenir y Erradicar la Violencia contra las Mujeres fue aprobado por la Asamblea Nacional, constituye el resultado de un debate social y político sobre la necesidad de implementar atender esta problemática en el país. La Ley crea un Sistema Nacional Integral para prevenir y erradicar la violencia contra las mujeres (niñas, adolescentes, jóvenes, adultas y adultas mayores)
                             La cual crea un Sistema Nacional Integral para prevenir y erradicar la violencia contra las mujeres (niñas, adolescentes, jóvenes, adultas y adultas mayores), El sistema está conformado por 16 instituciones entre ellos varios ministerios como Salud, Educación, Inclusión Económica y Social, Consejos Nacionales para la igualdad, Ecu 911, Fiscalía, Consejo de la Judicatura, Gobiernos Autónomos descentralizados entre otros. Los cuales según la ley tienen atribuciones para articular acciones tendientes a la correcta implementación de la ley a fin de garantizar los derechos de mujeres y niñas
             </p>
+
+            <div class="container">
+                <div class="card card1" [ngClass]="{'card-active': isCardActive(cards)}">
+                    <div class="card-header">
+                    <button class="boton1" (click)="mostrarTresCards()">Tipos de violencia</button>
+                    <button class="boton1" (click)="mostrarInformacion()">Ámbitos de violencia</button>
+                    <button class="boton1" (click)="mostrarCarrusel()">Resultados ENVIGMU - 2019</button>
+                    </div>
+                    <div class="card-body">
+                    <ng-container *ngIf="mostrarCards">
+                        <!-- Cards adicionales -->
+                        <div #container class="row">
+                            <div class="col-md-4" *ngFor="let card of cards | slice:currentPageIndex*3:(currentPageIndex+1)*3">
+                            <div class="card card2">
+                                <div class="card-body">
+                                <!-- Contenido de la card -->
+                                <img [src]="card.image" alt="Imagen" class="imagen2">
+                                <p class="titulo">{{ card.title }}</p>
+                                <p class="descripcion">{{ card.description }}</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- Fin de las cards adicionales -->
+
+                        <!-- Flechas -->
+                        <!-- Flecha izquierda -->
+                        <button (click)="previousPage($event)" type="button" class="arrow-button arrow-left" [disabled]="currentPageIndex === 0">
+                        <i class="fa fa-chevron-left"></i>
+                        </button>
+
+                        <button (click)="nextPage($event)" type="button" class="arrow-button arrow-right" [disabled]="currentPageIndex === totalPages - 1">
+                        <i class="fa fa-chevron-right"></i>
+                        </button>
+
+
+                        <!-- Fin de las flechas -->
+                        </ng-container>
+
+
+                        
+                    </div>
+                </div>
+                </div>
+
     </div>

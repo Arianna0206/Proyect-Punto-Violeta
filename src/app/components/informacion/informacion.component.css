@@ -76,3 +76,98 @@
     background-color: #A840C3;
  }
 
+ .card {
+  margin-top: 1.5%;
+  flex: 0 0 calc(100% / 3);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(180deg, rgba(255, 157, 223, 0) 0%, rgba(255, 157, 223, 0.286458) 52.6%, #FF9DDF 100%);
+  padding: 3%;
+}
+
+.card-body {
+  margin-top: 6%;
+}
+
+.boton1{
+  background-color: transparent;
+  border: none;
+  padding: 8px;
+  transition: background-color 0.2s, border-color 0.2s, transform 0.2s;
+  font-family: 'Dancing Script', cursive;
+  color: black;
+  font-size: 1.5rem;
+}
+
+.boton1:hover {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FD62E5 100%);
+  border-color: transparent;
+  transform: scale(1.2);
+}
+
+.arrow-button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.arrow-left {
+  left: 0;
+}
+
+.arrow-right {
+  right: 0;
+}
+
+
+.card1 {
+  padding: 0 3rem;
+  border: none;
+}
+
+.imagen2 {
+  margin-left: 6rem;
+}
+
+.titulo {
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.descripcion {
+  text-align: justify;
+  font-family: Raleway;
+  font-size: 1rem;
+}
+
+.card2 {
+  background: linear-gradient(180deg, rgba(233, 238, 248, 0.7) 0%, rgba(245, 173, 248, 0.7) 100%);
+  border-radius: 2rem;
+}
+
+.fa {
+  font-size: 4rem; /* Tamaño de la fuente */
+  color: #E68BFF;
+  margin: 0.5rem;
+}
+
+.card-active {
+  transition: transform 0.3s ease-out; /* Ajusta la duración y el efecto de transición según tus necesidades */
+}
+
+.card-active.card1 {
+  transform: translateX(-100%); /* Ajusta la posición de la tarjeta al desplazarse */
+}
+
+
+
+
