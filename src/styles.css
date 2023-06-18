@@ -1,6 +1,7 @@
 *, html, body {
     margin: 0;
     padding: 0;
+    
   }
   
   html {
@@ -12,5 +13,8 @@
   body {
     overflow-x: hidden;
   }
+
+  @import '~bootstrap/dist/css/bootstrap.css';
+
 
  

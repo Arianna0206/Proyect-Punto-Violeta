@@ -50,6 +50,7 @@
                     <button class="boton1" (click)="mostrarCarrusel()">Resultados ENVIGMU - 2019</button>
                     </div>
                     <div class="card-body">
+                    <!-- Tipos de violencia -->
                     <ng-container *ngIf="mostrarCards">
                         <!-- Cards adicionales -->
                         <div #container class="row">
@@ -79,6 +80,85 @@
 
                         <!-- Fin de las flechas -->
                         </ng-container>
+
+                        <!-- Ámbitos de violencia -->
+                        <ng-container *ngIf="mostrarInfo">
+                        
+                        <!-- Botones circulares -->
+                        <div class="botones-container">
+                            <div class="row">
+                            <div class="col-md-2 botonesEs">
+                                <button class="btn btn-primary boton2" (click)="seleccionarBoton(0)"  [ngClass]="{'boton-seleccionado': botonSeleccionado === 0}">Intrafamiliar o doméstico</button>
+                            </div>
+                            <div class="col-md-2 botonesEs">
+                                <button class="btn btn-primary boton2" (click)="seleccionarBoton(1)" [ngClass]="{'boton-seleccionado': botonSeleccionado === 1}">Educativo</button>
+                            </div>
+                            <div class="col-md-2 botonesEs">
+                                <button class="btn btn-primary boton2" (click)="seleccionarBoton(2)" [ngClass]="{'boton-seleccionado': botonSeleccionado === 2}">Laboral</button>
+                            </div>
+                            <div class="col-md-2 botonesEs">
+                                <button class="btn btn-primary boton2" (click)="seleccionarBoton(3)" [ngClass]="{'boton-seleccionado': botonSeleccionado === 3}">Deportivo</button>
+                            </div>
+                            <div class="col-md-2 botonesEs">
+                                <button class="btn btn-primary boton2" (click)="seleccionarBoton(4)" [ngClass]="{'boton-seleccionado': botonSeleccionado === 4}">Estatal e institucional</button>
+                            </div>
+                            </div>
+                            <!-- Información adicional -->
+                        <div class="row" >
+                            <div class="col-md-8 offset-md-2"  *ngIf="botonSeleccionado !== null && mostrarContenido[botonSeleccionado]">
+                            <div class="card card3">
+                                <div class="card-body text12">
+                                <p class="text12">{{ informacionBotones[botonSeleccionado].descripcion }}</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- Fin de la información adicional -->
+                            <div class="row">
+                            <div class="col-md-2 botonesEs1">
+                                <button class="btn btn-primary boton2" (click)="seleccionarBoton(5)" [ngClass]="{'boton-seleccionado': botonSeleccionado === 5}">Centros de Privación de Libertad</button>
+                            </div>
+                            <div class="col-md-2 botonesEs1">
+                                <button class="btn btn-primary boton2" (click)="seleccionarBoton(6)" [ngClass]="{'boton-seleccionado': botonSeleccionado === 6}">Mediático y cibernético</button>
+                            </div>
+                            <div class="col-md-2 botonesEs1">
+                                <button class="btn btn-primary boton2" (click)="seleccionarBoton(7)" [ngClass]="{'boton-seleccionado': botonSeleccionado === 7}">Espacio público o comunitario</button>
+                            </div>
+                            <div class="col-md-2 botonesEs1">
+                                <button class="btn btn-primary boton2" (click)="seleccionarBoton(8)" [ngClass]="{'boton-seleccionado': botonSeleccionado === 8}">Centros e instituciones de salud</button>
+                            </div>
+                            <div class="col-md-2 botonesEs1">
+                                <button class="btn btn-primary boton2" (click)="seleccionarBoton(9)" [ngClass]="{'boton-seleccionado': botonSeleccionado === 9}">Emergencias y situaciones humanitarias</button>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- Fin de los botones circulares -->
+                        </ng-container>
+
+                        <ng-container *ngIf="mostrarCarousel">
+                        <!-- Carrusel de imágenes -->
+                        <div class="carousel">
+                            <div class="carousel-inner">
+                            <div *ngFor="let image of images; let i = index" [class.active]="i === currentSlideIndex" class="carousel-item">
+                                <img [src]="image" [alt]="'Slide ' + (i + 1)">
+                            </div>
+                            </div>
+                            <a class="carousel-control prev" (click)="prevSlide()">&lsaquo;</a>
+                            <a class="carousel-control next" (click)="nextSlide()">&rsaquo;</a>
+                        </div>
+
+                        <!-- Efecto de puntos -->
+                        <div class="carousel-dots">
+                        <span *ngFor="let image of images; let i = index" [class.active]="i === currentSlideIndex"></span>
+                        </div>
+                        
+                        <!-- Fin del carrusel de imágenes -->
+                        </ng-container>
+
+
+
+
+
 
 
                         

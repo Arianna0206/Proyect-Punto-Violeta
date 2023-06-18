@@ -169,5 +169,139 @@
 }
 
 
+.btn {
+  width: 100%;
+  height: 100%;
+  border-radius: 10%;
+}
+
+.no-click {
+  pointer-events: none;
+}
+
+
+.boton2 {
+  background: linear-gradient(180deg, rgba(254, 150, 221, 0) 0%, #FE96DD 100%);
+  border: none;
+  padding: 8px;
+  transition: background-color 0.2s, border-color 0.2s, transform 0.2s;
+  font-family: 'Raleway', cursive;
+  color: black;
+  font-size: 1rem;
+  margin: 2rem;
+}
+
+.boton2:hover {
+  border-color: transparent;
+  transform: scale(1.2);
+}
+
+.botonesEs{
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+
+.botonesEs1 {
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card3 {
+  margin: 4rem 0;
+  background: linear-gradient(180deg, #F4C9FF 0%, rgba(244, 201, 255, 0) 100%);
+  border-radius: 3rem;
+}
+
+.text12 {
+  font-family: Raleway;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.boton-seleccionado {
+  background: linear-gradient(180deg, rgba(249, 0, 168, 0) 0%, #F900A8 100%);
+}
+
+.carousel {
+  position: relative;
+  width: 600px; /* Establece el ancho deseado para el carrusel */
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.3s ease;
+  width: 100%;
+  overflow-x: hidden; /* Oculta el desbordamiento horizontal */
+}
+
+.carousel-item {
+  flex: 0 0 100%; /* Ancho del carrusel igual al 100% del contenedor */
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-item {
+  transform: translateX(0); /* Asegura que la primera imagen esté alineada correctamente */
+}
+
+.carousel-inner.active {
+  transform: translateX(-100%); /* Desplaza el carrusel hacia la izquierda para mostrar la siguiente imagen */
+}
+
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.carousel-control.prev {
+  left: 10px;
+}
+
+.carousel-control.next {
+  right: 10px;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.carousel-dots span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.carousel-dots span.active {
+  background-color: #555;
+}
+
+
+
+
+
+
+
+
+
+
 
 
