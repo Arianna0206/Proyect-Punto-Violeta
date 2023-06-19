@@ -224,12 +224,11 @@
 
 .carousel {
   position: relative;
-  width: 600px; /* Establece el ancho deseado para el carrusel */
+  width: 100%; /* Establece el ancho deseado para el carrusel */
   overflow: hidden;
 }
 
 .carousel-inner {
-  display: flex;
   transition: transform 0.3s ease;
   width: 100%;
   overflow-x: hidden; /* Oculta el desbordamiento horizontal */
@@ -237,63 +236,105 @@
 
 .carousel-item {
   flex: 0 0 100%; /* Ancho del carrusel igual al 100% del contenedor */
+  transform: translateX(0); /* Asegura que la primera imagen esté alineada correctamente */
+  position: relative;
 }
 
 .carousel-item img {
-  width: 100%;
+  width: 80%;
   height: auto;
-}
-
-.carousel-item {
-  transform: translateX(0); /* Asegura que la primera imagen esté alineada correctamente */
+  margin-left: 10%;
 }
 
 .carousel-inner.active {
   transform: translateX(-100%); /* Desplaza el carrusel hacia la izquierda para mostrar la siguiente imagen */
 }
 
+.carousel-control::after {
+  content: none !important;
+}
 
 .carousel-control {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 40px;
-  height: 40px;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  font-size: 20px;
-  text-align: center;
-  line-height: 40px;
+  font-size: 24px;
+  color: #000;
+  background: none;
+  border: none;
   cursor: pointer;
+  outline: none;
 }
 
 .carousel-control.prev {
-  left: 10px;
+  left: 2%; /* Ajusta la posición lateral de la flecha previa según tus necesidades */
+  text-decoration: none;
+  font-size: 4rem;
+  color: #E68BFF;
 }
 
 .carousel-control.next {
-  right: 10px;
+  right: 2%; /* Ajusta la posición lateral de la flecha siguiente según tus necesidades */
+  text-decoration: none;
+  font-size: 4rem;
+  color: #E68BFF;
 }
 
 .carousel-dots {
   display: flex;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 10px; /* Ajusta el margen según tus necesidades */
 }
 
 .carousel-dots span {
-  width: 10px;
-  height: 10px;
+  display: inline-block;
+  width: 10px; /* Ajusta el tamaño de la bolita según tus necesidades */
+  height: 10px; /* Ajusta el tamaño de la bolita según tus necesidades */
   border-radius: 50%;
   background-color: #ccc;
-  margin: 0 5px;
-  cursor: pointer;
+  margin: 0 5px; /* Ajusta el margen entre las bolitas según tus necesidades */
+  transition: transform 0.3s ease-in-out;
 }
 
 .carousel-dots span.active {
-  background-color: #555;
+  transform: scale(1.2); /* Ajusta el tamaño aumentado de la bolita según tus necesidades */
 }
 
+.image-container {
+  position: relative;
+  padding-top: 30%;
+  height: auto;
+}
+
+.image-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.image-caption h3,
+.image-caption p {
+  margin: 0 10%;
+  text-align: left;
+}
+
+.image-caption h3 {
+  font-size: 1.5vw; /* Ajusta el tamaño del título utilizando vw */
+  margin-bottom: 5px;
+  font-family: Raleway;
+  color: #A774E4;
+}
+
+.image-caption p {
+  font-size: 1.2vw; /* Ajusta el tamaño de la descripción utilizando vw */
+  margin-bottom: 10px;
+  font-family: Raleway;
+  color: #000;
+  text-align: justify;
+}
 
 
 

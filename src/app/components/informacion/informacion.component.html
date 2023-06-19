@@ -140,20 +140,26 @@
                         <div class="carousel">
                             <div class="carousel-inner">
                             <div *ngFor="let image of images; let i = index" [class.active]="i === currentSlideIndex" class="carousel-item">
-                                <img [src]="image" [alt]="'Slide ' + (i + 1)">
+                                <div class="image-container">
+                                <img [src]="image.url" [alt]="image.title">
+                                <div class="image-caption">
+                                <h3>{{ image.title }}</h3>
+                                <p>{{ image.description }}</p>
+                                </div>
+                                </div>
                             </div>
                             </div>
-                            <a class="carousel-control prev" (click)="prevSlide()">&lsaquo;</a>
+                            <a class="carousel-control prev" (click)="prevSlide()" [class.disabled]="currentSlideIndex === 0">&lsaquo;</a>
                             <a class="carousel-control next" (click)="nextSlide()">&rsaquo;</a>
                         </div>
 
                         <!-- Efecto de puntos -->
                         <div class="carousel-dots">
-                        <span *ngFor="let image of images; let i = index" [class.active]="i === currentSlideIndex"></span>
+                            <span *ngFor="let image of images; let i = index" [class.active]="i === currentSlideIndex"></span>
                         </div>
-                        
-                        <!-- Fin del carrusel de imágenes -->
                         </ng-container>
+
+
 
 
 
