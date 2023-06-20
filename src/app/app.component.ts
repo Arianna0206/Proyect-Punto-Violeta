@@ -11,20 +11,5 @@ import { ViewportScroller } from '@angular/common';
 export class AppComponent {
   title = 'puntoVioleta';
   
-  mostrarContenido: boolean = true;
-  scrollEvent: string | undefined;
-
-  scrollToSection(sectionId: string) {
-    if (sectionId === 'violeta' || sectionId === 'quienes-somos' || sectionId === 'recursos') {
-      this.mostrarContenido = true;
-    } else {
-      this.mostrarContenido = false;
-    }
-    this.scrollEvent = sectionId;
-  }
-
-  ocultarContenido() {
-    this.mostrarContenido = false;
-  }
 }
 

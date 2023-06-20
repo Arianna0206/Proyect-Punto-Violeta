@@ -1,4 +1,4 @@
-<div class="grid-container">
+<div class="grid-container" id="informacion">
     <h2 class="full-screen-title">Situación de la Violencia de Género contra Mujeres en el Ecuador</h2>
             <h3 class="text5">Cátedra de UNESCO de Cultura y Educación para la paz UTPL (Universidad Técnica Particular de Loja).</h3>
             <div class="nombres">
@@ -49,7 +49,7 @@
                     <button class="boton1" (click)="mostrarInformacion()">Ámbitos de violencia</button>
                     <button class="boton1" (click)="mostrarCarrusel()">Resultados ENVIGMU - 2019</button>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body tarjetas">
                     <!-- Tipos de violencia -->
                     <ng-container *ngIf="mostrarCards">
                         <!-- Cards adicionales -->
@@ -70,11 +70,11 @@
                         <!-- Flechas -->
                         <!-- Flecha izquierda -->
                         <button (click)="previousPage($event)" type="button" class="arrow-button arrow-left" [disabled]="currentPageIndex === 0">
-                        <i class="fa fa-chevron-left"></i>
+                        <i class="fa">&lsaquo;</i>
                         </button>
 
                         <button (click)="nextPage($event)" type="button" class="arrow-button arrow-right" [disabled]="currentPageIndex === totalPages - 1">
-                        <i class="fa fa-chevron-right"></i>
+                        <i class="fa">&rsaquo;</i>
                         </button>
 
 
@@ -144,8 +144,8 @@
                                 <img [src]="image.url" [alt]="image.title">
                                 <div class="image-caption">
                                 <h3>{{ image.title }}</h3>
-                                <p>{{ image.description }}</p>
                                 </div>
+                                <p class="description">{{ image.description }}</p>
                                 </div>
                             </div>
                             </div>
@@ -155,21 +155,10 @@
 
                         <!-- Efecto de puntos -->
                         <div class="carousel-dots">
-                            <span *ngFor="let image of images; let i = index" [class.active]="i === currentSlideIndex"></span>
+                            <span *ngFor="let image of images let i = index" [class.active]="i === currentSlideIndex"></span>
                         </div>
                         </ng-container>
-
-
-
-
-
-
-
-
-
-                        
                     </div>
                 </div>
-                </div>
-
+            </div>
     </div>

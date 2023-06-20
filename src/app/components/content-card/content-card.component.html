@@ -5,9 +5,6 @@
       <div class="row">
         <div class="col-md-6">
           <div class="quienes-header">
-            <div class="quienes-header-content">
-                <p *ngIf="mostrarTitulo" class="text1">¿Quiénes somos?</p>
-            </div>
             <button class="btn btn-primary boton1 text0" (click)="vaciarCardPrincipal()">></button>
             <button *ngIf="cardVacia" class="btn btn-primary boton1 text0" (click)="volverCardPrincipal()"><</button>
           </div>
@@ -16,6 +13,9 @@
            </div>
 
           <div class="quienes-body" *ngIf="!cardVacia">
+          <div class="quienes-header-content">
+                <p class="text1">¿Quiénes somos?</p>
+            </div>
             <p class="text2">Somos un espacio que se dedica a informar y 
             concienciar sobre la violencia contra las mujeres y las niñas. 
             Aquí encontrarás recursos y herramientas para entender y prevenir 

@@ -47,11 +47,25 @@ export class NavbarComponent implements OnInit {
     }
   }
 
-  emitirOcultarContenido() {
-    this.ocultarContenido.emit();
-  }
+  
 
   toggleOffcanvas() {
     this.isOffcanvasOpen = !this.isOffcanvasOpen;
   }
+  
+
+  mostrarGaleria: boolean = false;
+  emitirOcultarContenido() {
+    this.mostrarGaleria = true; // Actualiza la variable a true
+  }
+
+
+navigateToInformacion() {
+  setTimeout(() => {
+    const element = document.querySelector('.nested-card.card1');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, 300); // Ajusta el valor de scrollDelay según sea necesario
+}
 }

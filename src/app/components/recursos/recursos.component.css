@@ -41,6 +41,10 @@
   #card-1 {
     background-color: rgba(55, 34, 84, 1);
   }
+
+  .recursos {
+    cursor: pointer;
+  }
   
   /* Agrega la fuente Dancing Script */
   @font-face {
@@ -50,7 +54,7 @@
   
   .text4 {
     font-family: Raleway;
-    font-size: 1rem
+    font-size: 1rem;
   }
   
   .imagenes img {

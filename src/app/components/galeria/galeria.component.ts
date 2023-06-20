@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 interface Evento {
   titulo : string;
@@ -12,7 +12,8 @@ interface Evento {
   styleUrls: ['./galeria.component.css']
 })
 export class GaleriaComponent {
-  mostrarGaleria: boolean = true;
+  @Output() scrollEvent = new EventEmitter();
+  mostrarGaleria: boolean = false;
   eventos: Evento[] = [
     {
       titulo: 'Evento de Apertura del Punto Violeta en el Consultorio Jurídico Gratuito de la UTPL',
@@ -30,9 +31,6 @@ export class GaleriaComponent {
   eventoActual: Evento = this.eventos[0];
 
 
-  ocultarGaleria() {
-    this.mostrarGaleria = false;
-  }
 
   siguienteEventos() {
     const indiceActual = this.eventos.indexOf(this.eventoActual);

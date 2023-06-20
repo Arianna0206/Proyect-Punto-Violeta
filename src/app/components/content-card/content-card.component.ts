@@ -10,11 +10,9 @@ export class ContentCardComponent {
   @Output() scrollEvent = new EventEmitter<string>();
 
   cardVacia: boolean = false;
-  mostrarTitulo: boolean = true;
 
   vaciarCardPrincipal() {
     this.cardVacia = true;
-    this.mostrarTitulo = false;
   }
 
   volverCardPrincipal() {

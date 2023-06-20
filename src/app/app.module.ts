@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { OwlModule } from 'ngx-owl-carousel';
 import { CommonModule } from '@angular/common';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { AppRoutingModule } from './app-routing.module';
+import { HomeComponent } from './pages/home/home.component';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -24,13 +26,15 @@ import { InformacionComponent } from './components/informacion/informacion.compo
     FooterComponent,
     RecursosComponent,
     GaleriaComponent,
-    InformacionComponent
+    InformacionComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     OwlModule,
     CommonModule,
-    CarouselModule.forRoot()
+    CarouselModule.forRoot(),
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

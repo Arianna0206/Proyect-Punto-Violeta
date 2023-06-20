@@ -13,5 +13,10 @@ export class RecursosComponent {
   mostrarRecursos() {
     this.scrollEvent.emit('recursos');
   }
+
+  openForm(url: string) {
+    window.open(url, "_blank");
+  }
+  
 }
 
