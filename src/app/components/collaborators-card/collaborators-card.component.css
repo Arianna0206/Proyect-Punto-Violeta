@@ -5,8 +5,7 @@
   .container-fluid.bg-image img {
     position: absolute;
     top: 0;
-    left: 5rem;
-    width: 90%;
+    width: 98%;
     height: 40vw;
     object-fit: cover; /* para que la imagen se ajuste al tamaño del contenedor */
   }
@@ -26,7 +25,7 @@
 
   h2{
     font-family: 'Dancing Script', cursive;
-    font-size: 29px;
+    font-size: 1.4rem;
     margin-top: 3rem;
     margin-left: 6rem;
     color: rgba(168, 64, 195, 1);

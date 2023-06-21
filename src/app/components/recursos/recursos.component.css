@@ -16,7 +16,7 @@
   #principal {
     background-color: rgba(55, 34, 84, 1);
     justify-content: center;
-    margin: 0 7.5%;
+    margin: 0 3%;
   }
   
   @media (max-width: 800px) {

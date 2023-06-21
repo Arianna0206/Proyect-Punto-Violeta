@@ -15,6 +15,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { RecursosComponent } from './components/recursos/recursos.component';
 import { GaleriaComponent } from './components/galeria/galeria.component';
 import { InformacionComponent } from './components/informacion/informacion.component';
+import { GraficasComponent } from './components/graficas/graficas.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { InformacionComponent } from './components/informacion/informacion.compo
     RecursosComponent,
     GaleriaComponent,
     InformacionComponent,
-    HomeComponent
+    HomeComponent,
+    GraficasComponent
   ],
   imports: [
     BrowserModule,

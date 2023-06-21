@@ -1,0 +1,29 @@
+.container {
+    margin-top: -1%;
+    margin-bottom: 3%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .column img {
+    margin-bottom: 10px;
+    max-width: 100%; /* Establece un ancho máximo para las imágenes */
+    height: auto; /* Mantiene la proporción de aspecto */
+  }
+  
+  .column h4 {
+    margin: 1.5rem 0;
+    font-size: 1rem;
+
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+  

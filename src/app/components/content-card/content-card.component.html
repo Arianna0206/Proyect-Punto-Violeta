@@ -11,8 +11,9 @@
           <div class="nested-card card1" *ngIf="cardVacia">
             <app-informacion></app-informacion>
            </div>
-
+       <div class="grid-container">
           <div class="quienes-body" *ngIf="!cardVacia">
+          
           <div class="quienes-header-content">
                 <p class="text1">¿Quiénes somos?</p>
             </div>
@@ -31,7 +32,7 @@
 
             <p class="text3"> Tipos de violencia de género en contra de la mujer </p>
             
-          <div class="grid-container">
+             
                <div class="row ">
                <!-- card 1 imagen - Física -->
                     <div class="col-md-4 col-sm-6 col-xs-12"> 
@@ -99,11 +100,22 @@
                         </div>
                     </div>
                 </div>
+                
             </div>
+           
         </div>
+        
+        
         </div>
-        <div class="col-md-6" *ngIf="cardVacia"></div>
     </div>
+     <div class="col-md-6" *ngIf="!cardVacia">
+            <img class="mapa" src="../../assets/images/mapa.png" alt="Imagen">
+        </div>
+    </div>
+    <div class="recursos" *ngIf="!cardVacia">
+        <app-graficas></app-graficas>
+        <app-recursos></app-recursos>
+        <app-collaborators-card></app-collaborators-card>
     </div>
   </div>
 </div>
