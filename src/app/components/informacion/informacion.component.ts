@@ -6,7 +6,7 @@ import 'bootstrap';
   templateUrl: './informacion.component.html',
   styleUrls: ['./informacion.component.css']
 })
-export class InformacionComponent implements AfterViewInit, OnInit, OnDestroy {
+export class InformacionComponent implements AfterViewInit, OnInit {
   @ViewChild('container') container!: ElementRef;
   
 
@@ -105,24 +105,13 @@ export class InformacionComponent implements AfterViewInit, OnInit, OnDestroy {
   ];
 
   mostrarContenido: boolean[] = [];
-  private interval: any;
 
   ngOnInit() {
     this.botonSeleccionado = null; // Establecer el valor inicial a null
     this.mostrarContenido = Array(this.informacionBotones.length).fill(false);
 
-    const intervalTime = 3000;
-
-    this.interval = setInterval(() => {
-      this.nextSlide();
-    }, intervalTime);
   }
   
-  ngOnDestroy() {
-    clearInterval(this.interval);
-  }
-
-
   seleccionarBoton(index: number) {
     if (this.botonSeleccionado === index) {
       this.botonSeleccionado = null;
@@ -352,12 +341,15 @@ export class InformacionComponent implements AfterViewInit, OnInit, OnDestroy {
   currentSlideIndex = 0;
 
   prevSlide() {
-    this.currentSlideIndex = (this.currentSlideIndex - 1 + this.images.length) % this.images.length;
-    
+    if (this.currentSlideIndex > 0) {
+      this.currentSlideIndex--; // Disminuir el índice de la diapositiva actual
+    }    
   }
   
   nextSlide() {
-    this.currentSlideIndex = (this.currentSlideIndex + 1) % this.images.length;
+    if (this.currentSlideIndex < this.images.length - 1) {
+      this.currentSlideIndex++; // Aumentar el índice de la diapositiva actual
+    }
   }
   
 }

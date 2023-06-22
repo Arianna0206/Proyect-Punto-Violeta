@@ -109,7 +109,7 @@
 }
 
 
-/* .boton1 {
+  .boton1 {
   width: 15rem;
   height: 3rem;
   background: #FFFFFF;
@@ -120,7 +120,7 @@
   font-style: normal;
   border-color: white;
   font-size: 1.7rem;
-} */
+} 
 
 @font-face {
   font-family: 'Raleway';

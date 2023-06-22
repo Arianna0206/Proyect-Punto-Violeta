@@ -14,12 +14,26 @@ footer {
   grid-template-columns: auto 1fr;
   align-items: center;
   gap: 10px;
+  font-family: 'Dancing Script';
+  font-size: 2rem;
 }
 
 .card-text {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+
+.card-text1 {
+  margin-top: 5%;
+}
+
+.far {
+  font-size: 1rem;
+}
+
+.col-4 {
+  font-family: Raleway;
 }
 
 @media (max-width: 576px) {
@@ -39,6 +53,7 @@ footer {
 
   .card-text {
     font-size: 14px;
+    font-family: Raleway;
   }
 }
 
@@ -49,6 +64,7 @@ footer {
 
   .card-text {
     font-size: 16px;
+    font-family: Raleway;
   }
 }
 
@@ -73,6 +89,7 @@ a {
   margin-right: 24.36px;
   font-size: 150%;
   color: #A915C5;
+  font-family: Raleway;
 }
 
 .row {
@@ -85,7 +102,6 @@ a {
   justify-content: space-between;
   background-color: #e5a5ec;
   color: white;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .copyright {
@@ -101,6 +117,11 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Raleway;
   font-size: 14px;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('../../../assets/fonts/Raleway-Italic-VariableFont_wght.ttf');
 }

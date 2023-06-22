@@ -70,11 +70,11 @@
                         <!-- Flechas -->
                         <!-- Flecha izquierda -->
                         <button (click)="previousPage($event)" type="button" class="arrow-button arrow-left" [disabled]="currentPageIndex === 0">
-                        <i class="fa">&lsaquo;</i>
+                        <i class="fa fa-chevron-left"></i>
                         </button>
 
                         <button (click)="nextPage($event)" type="button" class="arrow-button arrow-right" [disabled]="currentPageIndex === totalPages - 1">
-                        <i class="fa">&rsaquo;</i>
+                        <i class="fa fa-chevron-right"></i>
                         </button>
 
 
@@ -149,7 +149,7 @@
                                 </div>
                             </div>
                             </div>
-                            <a class="carousel-control prev" (click)="prevSlide()" [class.disabled]="currentSlideIndex === 0">&lsaquo;</a>
+                            <a class="carousel-control prev" (click)="prevSlide()">&lsaquo;</a>
                             <a class="carousel-control next" (click)="nextSlide()">&rsaquo;</a>
                         </div>
 

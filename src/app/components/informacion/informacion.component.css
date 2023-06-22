@@ -2,7 +2,8 @@
     display: grid;
     grid-template-columns: 1fr; /* Una sola columna en dispositivos pequeños */
     place-items: center;
-    margin: 4% 2%;
+    margin: 4% 0;
+    margin-left: 4%;
   }
   
   @media (max-width: 700px) {
@@ -14,6 +15,10 @@
     }
   }
   
+  @font-face {
+    font-family: 'Raleway';
+    src: url('../../../assets/fonts/Raleway-Italic-VariableFont_wght.ttf');
+}
      
    .nombres {
     margin-top: 1rem;
@@ -99,7 +104,7 @@
   border: none;
   padding: 8px;
   transition: background-color 0.2s, border-color 0.2s, transform 0.2s;
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Dancing Script';
   color: black;
   font-size: 1.5rem;
 }
@@ -122,11 +127,23 @@
 }
 
 .arrow-left {
-  left: 0;
+  left: 0.5rem;
 }
 
 .arrow-right {
-  right: 0;
+  right: 1.3rem;
+}
+
+.fa {
+  font-size: 4rem; /* Tamaño de la fuente */
+  color: #E68BFF;
+}
+
+.arrow-button.arrow-left:disabled,
+.arrow-button.arrow-right:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+  /* Otros estilos opcionales */
 }
 
 .card1 {
@@ -144,7 +161,7 @@
 }
 
 .titulo {
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Dancing Script';
   text-align: center;
   font-size: 2rem;
 }
@@ -158,11 +175,6 @@
 .card2 {
   background: linear-gradient(180deg, rgba(233, 238, 248, 0.7) 0%, rgba(245, 173, 248, 0.7) 100%);
   border-radius: 2rem;
-}
-
-.fa {
-  font-size: 7rem; /* Tamaño de la fuente */
-  color: #E68BFF;
 }
 
 .card-active {
@@ -190,7 +202,7 @@
   border: none;
   padding: 8px;
   transition: background-color 0.2s, border-color 0.2s, transform 0.2s;
-  font-family: 'Raleway', cursive;
+  font-family: 'Raleway';
   color: black;
   font-size: 1rem;
   margin: 2rem;
@@ -251,13 +263,14 @@
   margin-left: 10%;
 }
 
-.carousel-inner.active {
-  transform: translateX(-100%); /* Desplaza el carrusel hacia la izquierda para mostrar la siguiente imagen */
-}
 
-.carousel-control::after {
+/* .carousel-inner.active {
+  transform: translateX(-100%); Desplaza el carrusel hacia la izquierda para mostrar la siguiente imagen 
+} */
+
+/* .carousel-control::after {
   content: none !important;
-}
+} */
 
 .carousel-control {
   position: absolute;

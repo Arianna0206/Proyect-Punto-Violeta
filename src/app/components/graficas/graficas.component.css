@@ -14,12 +14,18 @@
     margin-bottom: 10px;
     max-width: 100%; /* Establece un ancho máximo para las imágenes */
     height: auto; /* Mantiene la proporción de aspecto */
-  }
+  } 
+
+  @font-face {
+    font-family: 'Raleway';
+    src: url('../../../assets/fonts/Raleway-Italic-VariableFont_wght.ttf');
+}
   
   .column h4 {
     margin: 1.5rem 0;
     font-size: 1rem;
-
+    color: #A774E4;
+    font-family: Raleway;
   }
   
   .row {
