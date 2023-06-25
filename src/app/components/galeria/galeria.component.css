@@ -1,5 +1,16 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto; /* Ajusta el valor según el alto de tu navbar */
+  z-index: 1000;
+}
+
+
 .grid-container {
   display: grid;
+  padding-top: 5%;
   place-items: center;
   width: 100vw;
   height: auto;

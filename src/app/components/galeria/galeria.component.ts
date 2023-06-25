@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 
+
 interface Evento {
   titulo : string;
   descripcion: string;
@@ -12,6 +13,7 @@ interface Evento {
   styleUrls: ['./galeria.component.css']
 })
 export class GaleriaComponent {
+
   @Output() scrollEvent = new EventEmitter();
   mostrarGaleria: boolean = false;
   eventos: Evento[] = [

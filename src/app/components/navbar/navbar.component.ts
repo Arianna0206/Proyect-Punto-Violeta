@@ -10,6 +10,7 @@ import { ViewportScroller } from '@angular/common';
 })
 
 export class NavbarComponent implements OnInit {
+
   @Output() ocultarContenido = new EventEmitter<void>();
 
   isOffcanvasOpen = false;
@@ -68,4 +69,6 @@ navigateToInformacion() {
     }
   }, 300); // Ajusta el valor de scrollDelay según sea necesario
 }
+
+
 }
