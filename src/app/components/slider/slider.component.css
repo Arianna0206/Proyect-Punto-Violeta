@@ -3,6 +3,9 @@
     width: 100%;
     max-width: auto;
     overflow: hidden;
+    padding-top: 6%;
+    padding-bottom: 3%;
+    background-color: #DEC4E1;
 }
   
 img {
@@ -27,11 +30,16 @@ img {
     transform: translate(-50%, -50%);
   }
   
-@media (max-width: 900px) {
+@media (max-width: 768px) {
     .pulse {
       width: 10px;
       height: 10px;
     }
+
+    .text-top,
+  .text-bottom {
+    font-size: 8vw; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+  }
   }
   
 
@@ -80,14 +88,14 @@ img {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 1.5rem;
+    font-size: 2vw;
     text-align: justify;
   }
 
   .text-bottom{
     text-align: center;
     font-family: 'Dancing Script', cursive;
-    font-size: 1.3rem;
+    font-size: 1.5vw;
   }
 
   .info.visible .text-bottom {

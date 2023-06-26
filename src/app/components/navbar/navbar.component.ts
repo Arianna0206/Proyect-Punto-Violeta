@@ -1,5 +1,5 @@
-import { Component, HostListener, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, HostListener, OnInit, Input, Output, EventEmitter, Renderer2 } from '@angular/core';
+import { Router , NavigationEnd} from '@angular/router';
 import { Navbar } from 'src/app/core/interfaces/navbar';
 import { ViewportScroller } from '@angular/common';
 
@@ -14,13 +14,16 @@ export class NavbarComponent implements OnInit {
   @Output() ocultarContenido = new EventEmitter<void>();
 
   isOffcanvasOpen = false;
+  isGaleriaPage = false;
+  isInformacionPage = false;
+
 
   @Input() scrollEvent = new EventEmitter();
   isScrolled: boolean = false;
 
   @Input() navbar!: Navbar;
 
-  constructor(private router: Router, private viewportScroller: ViewportScroller) { }
+  constructor(private router: Router, private viewportScroller: ViewportScroller, private renderer: Renderer2) { }
 
   ngOnInit() {
     this.scrollEvent.subscribe((sectionId: string) => {
@@ -30,7 +33,32 @@ export class NavbarComponent implements OnInit {
         this.scrollToSection(sectionId);
       }
     });
+
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        this.isGaleriaPage = event.url.includes('/galeria');
+        this.isInformacionPage = event.url.includes('/informacion');
+        this.actualizarVisibilidadBotones();
+      }
+    });
   }
+
+  actualizarVisibilidadBotones() {
+    const botonQuienesSomos = document.getElementById('boton-quienes-somos');
+    const botonRecursos = document.getElementById('boton-recursos');
+    const botonInformacion = document.getElementById('boton-informacion');
+  
+    if (this.isGaleriaPage || this.isInformacionPage) {
+      this.renderer.setStyle(botonQuienesSomos, 'display', 'none');
+      this.renderer.setStyle(botonRecursos, 'display', 'none');
+      this.renderer.setStyle(botonInformacion, 'display', 'none');
+    } else {
+      this.renderer.removeStyle(botonQuienesSomos, 'display');
+      this.renderer.removeStyle(botonRecursos, 'display');
+      this.renderer.removeStyle(botonInformacion, 'display');
+    }
+  }
+  
 
   @HostListener("window:scroll", [])
   onWindowScroll() {
@@ -53,7 +81,6 @@ export class NavbarComponent implements OnInit {
   toggleOffcanvas() {
     this.isOffcanvasOpen = !this.isOffcanvasOpen;
   }
-  
 
   mostrarGaleria: boolean = false;
   emitirOcultarContenido() {

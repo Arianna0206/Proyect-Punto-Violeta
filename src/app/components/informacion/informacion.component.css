@@ -1,17 +1,16 @@
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr; /* Una sola columna en dispositivos pequeños */
     place-items: center;
     margin: 4% 0;
-    margin-left: 4%;
+    width: 80vw;
   }
   
   @media (max-width: 700px) {
     /* Media Query para dispositivos con un ancho mínimo de 700px */
     .grid-container {
       grid-template-columns: 1fr; /* Mantener una sola columna en dispositivos más grandes */
-      max-width: 70%; /* Establecer un ancho máximo para el contenedor */
-      margin: 0 1rem; /* Centrar el contenedor horizontalmente */
+      width: 10vw; /* Establecer un ancho máximo para el contenedor */
+      margin-left: -3rem;
     }
   }
   
@@ -354,6 +353,34 @@
   color: #000;
   text-align: center;
 }
+
+@media (max-width: 600px) {
+  .text5 {
+    font-size: 14px;
+  }
+  .text6 {
+    font-size: 12px;
+  }
+  .text7 {
+    font-size: 10px;
+  }
+  .text8 {
+    font-size: 14px;
+  }
+  .text9 {
+    font-size: 12px;
+  }
+  .text10 {
+    font-size: 12px;
+  }
+  .text11 {
+    font-size: 10px;
+  }
+  .text12 {
+    font-size: 12px;
+  }
+}
+
 
 
 
