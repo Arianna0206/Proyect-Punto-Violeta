@@ -17,7 +17,26 @@
 .card {
     border-radius: 20px; /* agrega borde redondeado */
     height: auto;
+    width: 97%;
+    margin: 0 1.5rem;
 }
+
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+        margin: 0 1.5rem;
+    }
+
+    .boton1{
+        margin-right: 50%;
+    }
+
+    .mapeo {
+        width: 100%;
+        margin-top: -10rem;
+        margin-left: 2rem;
+    }
+  }
 
 .card-title {
     font-size: 14px; /* Ajusta el tamaño de fuente del título de la card según tus preferencias */
@@ -37,16 +56,11 @@
     border-left: white;
     border-right: white;
     border-bottom: white;
-    margin: 0 90px 0 90px;
     height: auto;
 }
 
 .quienes-header {
     position: relative;
-}
-  
-.quienes-body {
-    margin-top: 20px; /* para dejar espacio entre el header y el body */
 }
   
 .card-vacia {
@@ -72,20 +86,22 @@
     padding-right: 1.3rem;
     padding-left: 1.3rem;
     border-radius: 10px;
-    bottom: 20px; /* Ajusta la distancia desde la parte inferior */
-    right: 20px; /* Ajusta la distancia desde el lado derecho */
+    bottom: 2%; /* Ajusta la distancia desde la parte inferior */
+    right: 2%; /* Ajusta la distancia desde el lado derecho */
     position: fixed;
+    z-index: 9999;
 }
 
 .boton1:hover{
     background-color: rgba(222, 196, 225, 1);
 }
+  
 
 .card button {
     position: absolute;
-    bottom: 10px;
-    right: 10px;
-}  
+    bottom: 2%;
+    right: 2%;
+}   
   
 .text0:hover{
     color: black;
@@ -107,8 +123,8 @@
     width: 130px;
     height: 150px;
     background: linear-gradient(rgba(233, 238, 248, 1), white);
-    margin-bottom: 50%;
-    margin-left: 30%;
+    margin-bottom: 20%;
+    margin-left: 40%;
     display: flex;
     flex-direction: column;
     max-width: 800%; /* ajuste este valor según su necesidad */
@@ -135,15 +151,22 @@
     margin: 1rem;
 }
 
+.cardInformacion {
+    margin-left: -4%;
+    overflow: hidden;
+}
 
-  
-  .mapa {
-    max-width: 100%;
-    width: 90%;
-    margin-left: 2vw;
-    margin-top: 8rem;
-    height: auto;
+.informacion-wrapper {
+    margin-top: -120px; /* Ajusta el valor según la altura de la sección que deseas ocultar */
+    padding-top: 50px; /* Ajusta el valor para mantener el espacio necesario para la sección oculta */
   }
+
+.mapa {
+    width: 90%;
+    margin-left: 3vw;
+    margin-top: 7rem;
+    height: auto;
+}
 
   
   

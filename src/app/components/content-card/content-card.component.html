@@ -6,10 +6,14 @@
         <div class="col-md-6">
           <div class="quienes-header">
             <button class="btn btn-primary boton1 text0" (click)="vaciarCardPrincipal()">></button>
-            <button *ngIf="cardVacia" class="btn btn-primary boton1 text0" (click)="volverCardPrincipal()"><</button>
+            <button *ngIf="cardVacia" class="btn btn-primary boton1 text0 d-sm-block" (click)="volverCardPrincipal()"><</button>
           </div>
           <div class="nested-card card1" *ngIf="cardVacia">
-            <app-informacion></app-informacion>
+            <div class="cardInformacion" >
+               <div class="informacion-wrapper">
+        <app-informacion></app-informacion>
+      </div>
+            </div>
            </div>
        <div class="grid-container">
           <div class="quienes-body" *ngIf="!cardVacia">
@@ -108,7 +112,7 @@
         
         </div>
     </div>
-     <div class="col-md-6" *ngIf="!cardVacia">
+     <div class="col-md-6 mapeo" *ngIf="!cardVacia">
             <img class="mapa" src="../../assets/images/mapa.png" alt="Imagen">
         </div>
     </div>

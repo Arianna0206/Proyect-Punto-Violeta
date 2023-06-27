@@ -8,8 +8,9 @@ import 'bootstrap';
 })
 export class InformacionComponent implements AfterViewInit, OnInit {
   @ViewChild('container') container!: ElementRef;
-  
 
+  
+  
   mostrarCards = true;
   mostrarInfo = false;
   mostrarCarousel = false;
@@ -109,7 +110,7 @@ export class InformacionComponent implements AfterViewInit, OnInit {
   ngOnInit() {
     this.botonSeleccionado = null; // Establecer el valor inicial a null
     this.mostrarContenido = Array(this.informacionBotones.length).fill(false);
-
+    
   }
   
   seleccionarBoton(index: number) {

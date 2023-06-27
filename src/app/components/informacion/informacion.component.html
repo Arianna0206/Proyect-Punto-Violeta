@@ -1,4 +1,6 @@
-
+<nav class="navbarC">
+  <app-navbar></app-navbar>
+</nav>
 <!-- Resto del contenido de la página de Información -->
 
 <div class="grid-container" id="informacion">
@@ -17,7 +19,7 @@
                 Esta cátedra desde hace aproximadamente 6 años ha venido implementado el programa de vinculación Ruta Participativa “de Salto en Salto a la violencia le ponemos alto”, que promueve el rechazo a la violencia de género en niños entre 6 y 9 años, antes que interioricen completamente todos los roles, prejuicios y estereotipos de género. Adicionalmente, el programa impulsa la reflexión sobre procesos cotidianos que llevan a dinámicas violentas, discriminatorias e inequitativas entre niños y niñas, hombres y mujeres. La Ruta aborda la violencia hacia las mujeres y el daño que esta causa de manera gradual y comprensible para niños. A 2018 se ha realizado capacitación a 15 instituciones educativas del cantón Loja, 150 estudiantes universitarios y aproximadamente 2500 estudiantes, estableciéndose como una línea de trabajo desde la investigación y la vinculación la problemática con relación a la violencia contra las mujeres Adicionalmente se ha venido trabajando desde los ámbitos de la investigación y vinculación en iniciativas dirigidas a la visibilizarían de la violencia en la sociedad.
                 </p>
             </div>
-            <div class="row">
+            <div class="row columnas">
                 <div class="col-md-6">
                     <p class="text8">Violencia contra mujeres</p>
                     <p class="text9">Las Naciones Unidas ha definido la violencia de género como: “todo acto de violencia basado en la pertenencia al sexo femenino que tenga o pueda tener como resultado un daño o sufrimiento físico, sexual o psicológico para la mujer, inclusive las amenazas de tales actos, la coacción o la privación arbitraria de la libertad, tanto si se producen en la vida pública o privada. Se determina que la violencia doméstica es una de las formas más recurrentes de violencia contra las mujeres y se la define como: comportamiento de la pareja o expareja que causa daño físico, sexual o psicológico, incluidas la agresión física, la coacción sexual, el maltrato psicológico y las conductas de control. (ONU, 1993) De conformidad a datos de la Agencia de las Naciones Unidas ONU Mujeres la violencia mujeres en el mundo:</p>
@@ -138,8 +140,9 @@
                         <!-- Fin de los botones circulares -->
                         </ng-container>
 
-                        <ng-container *ngIf="mostrarCarousel">
+                        <ng-container class="img-container" *ngIf="mostrarCarousel">
                         <!-- Carrusel de imágenes -->
+                        
                         <div class="carousel">
                             <div class="carousel-inner">
                             <div *ngFor="let image of images; let i = index" [class.active]="i === currentSlideIndex" class="carousel-item">
@@ -160,6 +163,7 @@
                         <div class="carousel-dots">
                             <span *ngFor="let image of images let i = index" [class.active]="i === currentSlideIndex"></span>
                         </div>
+                        
                         </ng-container>
                     </div>
                 </div>

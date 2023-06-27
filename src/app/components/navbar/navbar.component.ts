@@ -1,4 +1,4 @@
-import { Component, HostListener, OnInit, Input, Output, EventEmitter, Renderer2 } from '@angular/core';
+import { Component, HostListener, OnInit, Input, Output, EventEmitter, Renderer2, OnDestroy } from '@angular/core';
 import { Router , NavigationEnd} from '@angular/router';
 import { Navbar } from 'src/app/core/interfaces/navbar';
 import { ViewportScroller } from '@angular/common';
@@ -16,7 +16,6 @@ export class NavbarComponent implements OnInit {
   isOffcanvasOpen = false;
   isGaleriaPage = false;
   isInformacionPage = false;
-
 
   @Input() scrollEvent = new EventEmitter();
   isScrolled: boolean = false;
@@ -41,7 +40,10 @@ export class NavbarComponent implements OnInit {
         this.actualizarVisibilidadBotones();
       }
     });
+
   }
+  
+  
 
   actualizarVisibilidadBotones() {
     const botonQuienesSomos = document.getElementById('boton-quienes-somos');
@@ -80,6 +82,7 @@ export class NavbarComponent implements OnInit {
 
   toggleOffcanvas() {
     this.isOffcanvasOpen = !this.isOffcanvasOpen;
+
   }
 
   mostrarGaleria: boolean = false;
@@ -96,6 +99,9 @@ navigateToInformacion() {
     }
   }, 300); // Ajusta el valor de scrollDelay según sea necesario
 }
+
+
+
 
 
 }

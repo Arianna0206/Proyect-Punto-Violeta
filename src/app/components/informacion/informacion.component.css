@@ -1,16 +1,17 @@
 .grid-container {
     display: grid;
     place-items: center;
-    margin: 4% 0;
-    width: 80vw;
+    margin: 4%;
+    width: 93vw;
+    
   }
   
   @media (max-width: 700px) {
     /* Media Query para dispositivos con un ancho mínimo de 700px */
     .grid-container {
       grid-template-columns: 1fr; /* Mantener una sola columna en dispositivos más grandes */
-      width: 10vw; /* Establecer un ancho máximo para el contenedor */
-      margin-left: -3rem;
+      width: 30vw; /* Establecer un ancho máximo para el contenedor */
+      margin-left: 8%;
     }
   }
   
@@ -54,13 +55,13 @@
     font-family: 'Dancing Script', cursive;
     color: #A840C3;
     font-size: 2rem;
-    margin: 2rem 3rem;
+    margin: 2rem 0;
  }
 
  .text9 {
     text-align: justify;
     font-family: Raleway;
-    margin: 2rem 3rem;
+    margin: 2rem 1rem;
  }
 
  .text10 {
@@ -77,9 +78,14 @@
     color: white;
  }
 
+ .columnas {
+  width: 93%;
+  margin: 2% 0;
+ }
+
  #columna{
     background-color: #A840C3;
-    padding-right: 1%;
+    margin-right: -3rem;
  }
 
  .card {
@@ -146,6 +152,7 @@
 }
 
 .card1 {
+  width: 100%;
   padding: 0 -4rem;
   border: none;
 }
@@ -242,6 +249,7 @@
   position: relative;
   width: 100%; /* Establece el ancho deseado para el carrusel */
   overflow: hidden;
+  padding: 2rem;
 }
 
 .carousel-inner {
@@ -251,15 +259,13 @@
 }
 
 .carousel-item {
-  flex: 0 0 100%; /* Ancho del carrusel igual al 100% del contenedor */
   transform: translateX(0); /* Asegura que la primera imagen esté alineada correctamente */
   position: relative;
 }
 
 .carousel-item img {
-  width: 80%;
+  width: 100%;
   height: auto;
-  margin-left: 10%;
 }
 
 
@@ -281,17 +287,18 @@
   border: none;
   cursor: pointer;
   outline: none;
+  z-index: 10;
 }
 
 .carousel-control.prev {
-  left: 2%; /* Ajusta la posición lateral de la flecha previa según tus necesidades */
+  left: 0.5%; /* Ajusta la posición lateral de la flecha previa según tus necesidades */
   text-decoration: none;
   font-size: 4rem;
   color: #E68BFF;
 }
 
 .carousel-control.next {
-  right: 2%; /* Ajusta la posición lateral de la flecha siguiente según tus necesidades */
+  right: 0.5%; /* Ajusta la posición lateral de la flecha siguiente según tus necesidades */
   text-decoration: none;
   font-size: 4rem;
   color: #E68BFF;
@@ -318,6 +325,9 @@
   transform: scale(1.8); /* Ajusta el tamaño aumentado de la bolita según tus necesidades */
 }
 
+.img-container {
+  width: 90%;
+}
 
 .image-container {
   position: relative;
@@ -362,24 +372,76 @@
     font-size: 12px;
   }
   .text7 {
-    font-size: 10px;
+    font-size: 12px;
   }
   .text8 {
-    font-size: 14px;
+    font-size: 20px;
   }
   .text9 {
     font-size: 12px;
   }
   .text10 {
-    font-size: 12px;
+    font-size: 20px;
   }
   .text11 {
-    font-size: 10px;
+    font-size: 12px;
   }
   .text12 {
     font-size: 12px;
   }
+  .boton1{
+    font-size: 15px;
+  }
+  .titulo {
+    font-size: 20px;
+  }
+  .descripcion{
+    font-size: 12px;
+  }
+  .card2{
+    width: 80%;
+    margin-left: 9%;
+  }
+  .botones-container{
+    margin-right: 17%;
+  }
+  .card-header{
+    width: 100%;
+  }
 }
+  @media (max-width: 767px) {
+    .carousel-inner {
+      flex-wrap: wrap; /* Permite que los elementos del carrusel se envuelvan en pantallas pequeñas */
+      width: 95%;
+    }
+
+    .carousel-item img {
+      width: 90%;
+      margin-top: 2rem;
+    }
+  
+    .carousel-item {
+      width: 100%; /* Ajusta el ancho de los elementos del carrusel al 100% en pantallas pequeñas */
+    }
+  
+    .carousel-control,
+    .carousel-dots {
+      display: block; /* Muestra los controles y los puntos del carrusel en pantallas pequeñas */
+    }
+
+    .carousel-control.next{
+      margin-right: -0.5rem;
+    }
+
+    .carousel-control.prev {
+      margin-left: 0.5rem;
+    }
+
+    .carousel {
+      margin-left: -1rem;
+    }
+  }
+
 
 
 
