@@ -1,447 +1,356 @@
-.grid-container {
-    display: grid;
-    place-items: center;
-    margin: 4%;
-    width: 93vw;
-    
-  }
-  
-  @media (max-width: 700px) {
-    /* Media Query para dispositivos con un ancho mínimo de 700px */
-    .grid-container {
-      grid-template-columns: 1fr; /* Mantener una sola columna en dispositivos más grandes */
-      width: 30vw; /* Establecer un ancho máximo para el contenedor */
-      margin-left: 8%;
-    }
-  }
-  
-  @font-face {
-    font-family: 'Raleway';
-    src: url('../../../assets/fonts/Raleway-Italic-VariableFont_wght.ttf');
-}
-     
-   .nombres {
-    margin-top: 1rem;
-    text-align: center;
-  }
-
-  .full-screen-title {
- /* Establece el ancho del título al 100% del ancho de su contenedor */
-    text-align: center;
-    margin: 2% 0;
-    font-family: 'Dancing Script', cursive;
-
-  }
-
-  .text5 {
-    font-family: 'Dancing Script', cursive;
-    color: #A840C3;
-    text-align: center;
-  }
-
-  .text6{
-    font-family: 'Dancing Script', cursive;
-    color: #585151B2;
-    margin: 0;
-  }
-
-  .text7{
-    margin: 2rem 3rem;
-    text-align: justify;
-    font-family: Raleway;
-  }
-
- .text8 {
-    font-family: 'Dancing Script', cursive;
-    color: #A840C3;
-    font-size: 2rem;
-    margin: 2rem 0;
- }
-
- .text9 {
-    text-align: justify;
-    font-family: Raleway;
-    margin: 2rem 1rem;
- }
-
- .text10 {
-    font-family: 'Dancing Script', cursive;
-    color: black;
-    font-size: 2rem;
-    margin: 2rem 3rem;
- }
-
- .text11 {
-    text-align: justify;
-    font-family: Raleway;
-    margin: 2.5rem 3rem;
-    color: white;
- }
-
- .columnas {
-  width: 93%;
-  margin: 2% 0;
- }
-
- #columna{
-    background-color: #A840C3;
-    margin-right: -3rem;
- }
-
- .card {
-  margin-top: 1.5%;
-  flex: 0 0 calc(100% / 3);
+.card {
+margin-top: 1.5%;
+flex: 0 0 calc(100% / 3);
 }
 
 .card-header {
-  display: flex;
-  justify-content: space-between;
-  background: linear-gradient(180deg, rgba(255, 157, 223, 0) 0%, rgba(255, 157, 223, 0.286458) 52.6%, #FF9DDF 100%);
-  padding: 3%;
+display: flex;
+justify-content: space-between;
+background: linear-gradient(180deg, rgba(255, 157, 223, 0) 0%, rgba(255, 157, 223, 0.286458) 52.6%, #FF9DDF 100%);
+padding: 3%;
 }
 
 .card-body {
-  margin-top: 6%;
+margin-top: 6%;
 }
 
 .boton1{
-  background-color: transparent;
-  border: none;
-  padding: 8px;
-  transition: background-color 0.2s, border-color 0.2s, transform 0.2s;
-  font-family: 'Dancing Script';
-  color: black;
-  font-size: 1.5rem;
+background-color: transparent;
+border: none;
+padding: 8px;
+transition: background-color 0.2s, border-color 0.2s, transform 0.2s;
+font-family: 'Dancing Script';
+color: black;
+font-size: 1.5rem;
 }
 
 .boton1:hover {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FD62E5 100%);
-  border-color: transparent;
-  transform: scale(1.2);
+background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FD62E5 100%);
+border-color: transparent;
+transform: scale(1.2);
 }
 
 .arrow-button {
-  background: none;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1;
+background: none;
+border: none;
+outline: none;
+cursor: pointer;
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+z-index: 1;
 }
 
 .arrow-left {
-  left: 0.5rem;
+left: 0.5rem;
 }
 
 .arrow-right {
-  right: 1.3rem;
+right: 1.3rem;
 }
 
 .fa {
-  font-size: 4rem; /* Tamaño de la fuente */
-  color: #E68BFF;
+font-size: 4rem; /* Tamaño de la fuente */
+color: #E68BFF;
 }
 
 .arrow-button.arrow-left:disabled,
 .arrow-button.arrow-right:disabled {
-  opacity: 0.3;
-  cursor: not-allowed;
-  /* Otros estilos opcionales */
+opacity: 0.3;
+cursor: not-allowed;
+/* Otros estilos opcionales */
 }
 
 .card1 {
-  width: 100%;
-  padding: 0 -4rem;
-  border: none;
+width: 100%;
+padding: 0 -4rem;
+border: none;
 }
 
 .tarjetas {
-  width: 90%;
-  margin-left: 4.5%;
+width: 90%;
+margin-left: 4.5%;
 }
 
 .imagen2 {
-  margin-left: 6rem;
+margin-left: 6rem;
 }
 
 .titulo {
-  font-family: 'Dancing Script';
-  text-align: center;
-  font-size: 2rem;
+font-family: 'Dancing Script';
+text-align: center;
+font-size: 2rem;
 }
 
 .descripcion {
-  text-align: justify;
-  font-family: Raleway;
-  font-size: 1rem;
+text-align: justify;
+font-family: Raleway;
+font-size: 1rem;
 }
 
 .card2 {
-  background: linear-gradient(180deg, rgba(233, 238, 248, 0.7) 0%, rgba(245, 173, 248, 0.7) 100%);
-  border-radius: 2rem;
+background: linear-gradient(180deg, rgba(233, 238, 248, 0.7) 0%, rgba(245, 173, 248, 0.7) 100%);
+border-radius: 2rem;
 }
 
 .card-active {
-  transition: transform 0.3s ease-out; /* Ajusta la duración y el efecto de transición según tus necesidades */
+transition: transform 0.3s ease-out; /* Ajusta la duración y el efecto de transición según tus necesidades */
 }
 
 .card-active.card1 {
-  transform: translateX(-100%); /* Ajusta la posición de la tarjeta al desplazarse */
+transform: translateX(-100%); /* Ajusta la posición de la tarjeta al desplazarse */
 }
 
 
 .btn {
-  width: 100%;
-  height: 100%;
-  border-radius: 10%;
+width: 100%;
+height: 100%;
+border-radius: 10%;
 }
 
 .no-click {
-  pointer-events: none;
+pointer-events: none;
 }
 
 
 .boton2 {
-  background: linear-gradient(180deg, rgba(254, 150, 221, 0) 0%, #FE96DD 100%);
-  border: none;
-  padding: 8px;
-  transition: background-color 0.2s, border-color 0.2s, transform 0.2s;
-  font-family: 'Raleway';
-  color: black;
-  font-size: 1rem;
-  margin: 2rem;
+background: linear-gradient(180deg, rgba(254, 150, 221, 0) 0%, #FE96DD 100%);
+border: none;
+padding: 8px;
+transition: background-color 0.2s, border-color 0.2s, transform 0.2s;
+font-family: 'Raleway';
+color: black;
+font-size: 1rem;
+margin: 2rem;
 }
 
 .boton2:hover {
-  border-color: transparent;
-  transform: scale(1.2);
+border-color: transparent;
+transform: scale(1.2);
 }
 
 .botonesEs{
-  margin-right: 2rem;
-  margin-bottom: 2rem;
+margin-right: 2rem;
+margin-bottom: 2rem;
 }
 
 .botonesEs1 {
-  margin-right: 2rem;
-  margin-bottom: 2rem;
+margin-right: 2rem;
+margin-bottom: 2rem;
 }
 
 .card3 {
-  margin: 4rem 0;
-  background: linear-gradient(180deg, #F4C9FF 0%, rgba(244, 201, 255, 0) 100%);
-  border-radius: 3rem;
+margin: 4rem 0;
+background: linear-gradient(180deg, #F4C9FF 0%, rgba(244, 201, 255, 0) 100%);
+border-radius: 3rem;
 }
 
 .text12 {
-  font-family: Raleway;
-  text-align: center;
-  font-size: 1.2rem;
+font-family: Raleway;
+text-align: center;
+font-size: 1.2rem;
 }
 
 .boton-seleccionado {
-  background: linear-gradient(180deg, rgba(249, 0, 168, 0) 0%, #F900A8 100%);
+background: linear-gradient(180deg, rgba(249, 0, 168, 0) 0%, #F900A8 100%);
 }
 
 .carousel {
-  position: relative;
-  width: 100%; /* Establece el ancho deseado para el carrusel */
-  overflow: hidden;
-  padding: 2rem;
+position: relative;
+width: 100%; /* Establece el ancho deseado para el carrusel */
+overflow: hidden;
+padding: 2rem;
 }
 
 .carousel-inner {
-  transition: transform 0.3s ease;
-  width: 100%;
-  overflow-x: hidden; /* Oculta el desbordamiento horizontal */
+transition: transform 0.3s ease;
+width: 100%;
+overflow-x: hidden; /* Oculta el desbordamiento horizontal */
 }
 
 .carousel-item {
-  transform: translateX(0); /* Asegura que la primera imagen esté alineada correctamente */
-  position: relative;
+transform: translateX(0); /* Asegura que la primera imagen esté alineada correctamente */
+position: relative;
 }
 
 .carousel-item img {
-  width: 100%;
-  height: auto;
+width: 100%;
+height: auto;
 }
 
 
 /* .carousel-inner.active {
-  transform: translateX(-100%); Desplaza el carrusel hacia la izquierda para mostrar la siguiente imagen 
+transform: translateX(-100%); Desplaza el carrusel hacia la izquierda para mostrar la siguiente imagen 
 } */
 
 /* .carousel-control::after {
-  content: none !important;
+content: none !important;
 } */
 
 .carousel-control {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 24px;
-  color: #000;
-  background: none;
-  border: none;
-  cursor: pointer;
-  outline: none;
-  z-index: 10;
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+font-size: 24px;
+color: #000;
+background: none;
+border: none;
+cursor: pointer;
+outline: none;
+z-index: 10;
 }
 
 .carousel-control.prev {
-  left: 0.5%; /* Ajusta la posición lateral de la flecha previa según tus necesidades */
-  text-decoration: none;
-  font-size: 4rem;
-  color: #E68BFF;
+left: 0.5%; /* Ajusta la posición lateral de la flecha previa según tus necesidades */
+text-decoration: none;
+font-size: 4rem;
+color: #E68BFF;
 }
 
 .carousel-control.next {
-  right: 0.5%; /* Ajusta la posición lateral de la flecha siguiente según tus necesidades */
-  text-decoration: none;
-  font-size: 4rem;
-  color: #E68BFF;
+right: 0.5%; /* Ajusta la posición lateral de la flecha siguiente según tus necesidades */
+text-decoration: none;
+font-size: 4rem;
+color: #E68BFF;
 }
 
 .carousel-dots {
-  display: flex;
-  justify-content: center;
-  margin-top: 2%; /* Ajusta el margen según tus necesidades */
+display: flex;
+justify-content: center;
+margin-top: 2%; /* Ajusta el margen según tus necesidades */
 }
 
 .carousel-dots span {
-  display: inline-block;
-  width: 10px; /* Ajusta el tamaño de la bolita según tus necesidades */
-  height: 10px; /* Ajusta el tamaño de la bolita según tus necesidades */
-  border-radius: 50%;
-  background-color: rgba(204, 204, 204, 0.5); /* Color de fondo transparente para las bolitas pasadas */
-  margin: 0 5px; /* Ajusta el margen entre las bolitas según tus necesidades */
-  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Transiciones para transformación y cambio de color */
+display: inline-block;
+width: 10px; /* Ajusta el tamaño de la bolita según tus necesidades */
+height: 10px; /* Ajusta el tamaño de la bolita según tus necesidades */
+border-radius: 50%;
+background-color: rgba(204, 204, 204, 0.5); /* Color de fondo transparente para las bolitas pasadas */
+margin: 0 5px; /* Ajusta el margen entre las bolitas según tus necesidades */
+transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Transiciones para transformación y cambio de color */
 }
 
 .carousel-dots span.active {
-  background-color: #E68BFF; /* Color de fondo para la bolita de la imagen activa */
-  transform: scale(1.8); /* Ajusta el tamaño aumentado de la bolita según tus necesidades */
+background-color: #E68BFF; /* Color de fondo para la bolita de la imagen activa */
+transform: scale(1.8); /* Ajusta el tamaño aumentado de la bolita según tus necesidades */
 }
 
 .img-container {
-  width: 90%;
+width: 90%;
 }
 
 .image-container {
-  position: relative;
-  padding-top: 8%;
+position: relative;
+padding-top: 8%;
 }
 
 .image-caption {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  color: #fff;
-  box-sizing: border-box;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+color: #fff;
+box-sizing: border-box;
 }
 
 .image-caption h3 {
-  margin: 0 10%;
-  text-align: left;
+margin: 0 10%;
+text-align: left;
 }
 
 .image-caption h3 {
-  font-size: 1.5vw; /* Ajusta el tamaño del título utilizando vw */
-  margin-bottom: 5px;
-  font-family: Raleway;
-  color: #A774E4;
-  text-align: center;
+font-size: 1.5vw; /* Ajusta el tamaño del título utilizando vw */
+margin-bottom: 5px;
+font-family: Raleway;
+color: #A774E4;
+text-align: center;
 }
 
 .description {
-  font-size: 1.2vw; /* Ajusta el tamaño de la descripción utilizando vw */
-  margin-top: 3%;
-  font-family: Raleway;
-  color: #000;
-  text-align: center;
+font-size: 1.2vw; /* Ajusta el tamaño de la descripción utilizando vw */
+margin-top: 3%;
+font-family: Raleway;
+color: #000;
+text-align: center;
 }
 
 @media (max-width: 600px) {
-  .text5 {
-    font-size: 14px;
+.text5 {
+  font-size: 14px;
+}
+.text6 {
+  font-size: 12px;
+}
+.text7 {
+  font-size: 12px;
+}
+.text8 {
+  font-size: 20px;
+}
+.text9 {
+  font-size: 12px;
+}
+.text10 {
+  font-size: 20px;
+}
+.text11 {
+  font-size: 12px;
+}
+.text12 {
+  font-size: 12px;
+}
+.boton1{
+  font-size: 15px;
+}
+.titulo {
+  font-size: 20px;
+}
+.descripcion{
+  font-size: 12px;
+}
+.card2{
+  width: 80%;
+  margin-left: 9%;
+}
+.botones-container{
+  margin-right: 17%;
+}
+.card-header{
+  width: 100%;
+}
+}
+@media (max-width: 767px) {
+  .carousel-inner {
+    flex-wrap: wrap; /* Permite que los elementos del carrusel se envuelvan en pantallas pequeñas */
+    width: 95%;
   }
-  .text6 {
-    font-size: 12px;
+
+  .carousel-item img {
+    width: 90%;
+    margin-top: 2rem;
   }
-  .text7 {
-    font-size: 12px;
+
+  .carousel-item {
+    width: 100%; /* Ajusta el ancho de los elementos del carrusel al 100% en pantallas pequeñas */
   }
-  .text8 {
-    font-size: 20px;
+
+  .carousel-control,
+  .carousel-dots {
+    display: block; /* Muestra los controles y los puntos del carrusel en pantallas pequeñas */
   }
-  .text9 {
-    font-size: 12px;
+
+  .carousel-control.next{
+    margin-right: -0.5rem;
   }
-  .text10 {
-    font-size: 20px;
+
+  .carousel-control.prev {
+    margin-left: 0.5rem;
   }
-  .text11 {
-    font-size: 12px;
-  }
-  .text12 {
-    font-size: 12px;
-  }
-  .boton1{
-    font-size: 15px;
-  }
-  .titulo {
-    font-size: 20px;
-  }
-  .descripcion{
-    font-size: 12px;
-  }
-  .card2{
-    width: 80%;
-    margin-left: 9%;
-  }
-  .botones-container{
-    margin-right: 17%;
-  }
-  .card-header{
-    width: 100%;
+
+  .carousel {
+    margin-left: -1rem;
   }
 }
-  @media (max-width: 767px) {
-    .carousel-inner {
-      flex-wrap: wrap; /* Permite que los elementos del carrusel se envuelvan en pantallas pequeñas */
-      width: 95%;
-    }
-
-    .carousel-item img {
-      width: 90%;
-      margin-top: 2rem;
-    }
-  
-    .carousel-item {
-      width: 100%; /* Ajusta el ancho de los elementos del carrusel al 100% en pantallas pequeñas */
-    }
-  
-    .carousel-control,
-    .carousel-dots {
-      display: block; /* Muestra los controles y los puntos del carrusel en pantallas pequeñas */
-    }
-
-    .carousel-control.next{
-      margin-right: -0.5rem;
-    }
-
-    .carousel-control.prev {
-      margin-left: 0.5rem;
-    }
-
-    .carousel {
-      margin-left: -1rem;
-    }
-  }
-
 
 
 

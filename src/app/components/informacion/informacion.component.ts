@@ -4,7 +4,7 @@ import 'bootstrap';
 @Component({
   selector: 'app-informacion',
   templateUrl: './informacion.component.html',
-  styleUrls: ['./informacion.component.css']
+  styleUrls: ['./informacion.component.css' , './encabezado.component.css']
 })
 export class InformacionComponent implements AfterViewInit, OnInit {
   @ViewChild('container') container!: ElementRef;

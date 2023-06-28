@@ -29,7 +29,8 @@ import { GraficasComponent } from './components/graficas/graficas.component';
     GaleriaComponent,
     InformacionComponent,
     HomeComponent,
-    GraficasComponent
+    GraficasComponent,
+    
   ],
   imports: [
     BrowserModule,
