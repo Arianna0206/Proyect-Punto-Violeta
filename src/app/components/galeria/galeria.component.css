@@ -3,10 +3,8 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: auto; /* Ajusta el valor según el alto de tu navbar */
   z-index: 1000;
 }
-
 
 .grid-container {
   display: grid;
@@ -24,11 +22,8 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-top-right-radius: 1.7rem;
   border-top-left-radius: 1.7rem;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
   color: #A915C5;
   font-family: 'Raleway';
-  font-style: normal;
   border-color: white;
   font-size: 2rem;
   margin: 0 5rem;
@@ -68,8 +63,6 @@
 
 .imagen-responsiva {
   width: 100%;
-  height: auto;
-  object-fit: cover;
   border-radius: 2rem;
 }
 
@@ -118,7 +111,6 @@
   margin-left: 50%;
   margin-right: -30%;
 }
-
 
   .boton1 {
   width: 15rem;

@@ -35,14 +35,11 @@ img {
       width: 10px;
       height: 10px;
     }
-
     .text-top,
-  .text-bottom {
-    font-size: 8vw; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+    .text-bottom {
+      font-size: 8vw; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+    }
   }
-  }
-  
-
   
 .pulse {
     animation: pulse 1s infinite;

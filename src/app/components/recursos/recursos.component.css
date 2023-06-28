@@ -23,6 +23,13 @@
     #contenido {
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
+    .imagenes img {
+      width: 30%;
+    }
+    #principal {
+      width: 70%;
+      margin-left: 15%;
+    }
   }
   
   .card-title#text1 {
@@ -45,8 +52,7 @@
   .recursos {
     cursor: pointer;
   }
-  
-  /* Agrega la fuente Dancing Script */
+
   @font-face {
     font-family: 'Dancing Script';
     src: url('../../../assets/fonts/DancingScript-VariableFont_wght.ttf');
@@ -63,17 +69,5 @@
     object-fit: cover;
   }
 
-  @media (max-width: 800px) {
-    .imagenes img {
-      width: 30%;
-    }
-  }
-
-  @media (max-width: 800px) {
-    #principal {
-      width: 70%;
-      margin-left: 15%;
-    }
-  }
   
   

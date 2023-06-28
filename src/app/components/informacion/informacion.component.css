@@ -1,3 +1,126 @@
+.grid-container {
+  display: grid;
+  place-items: center;
+  margin: 4%;
+  width: 93vw;
+}
+
+@media (max-width: 500px) {
+  /* Media Query para dispositivos con un ancho mínimo de 700px */
+  .grid-container {
+    grid-template-columns: 1fr; /* Mantener una sola columna en dispositivos más grandes */
+    width: 80vw; /* Establecer un ancho máximo para el contenedor */
+    margin-left: 3%;
+  }
+  .text5 {
+    font-size: 10px;
+  }
+  .text6 {
+    font-size: 10px;
+  }
+  .text7 {
+    font-size: 10px;
+  }
+  .text8 {
+    font-size: 10px;
+  }
+  .text9 {
+    font-size: 10px;
+  }
+  .text10 {
+    font-size: 10px;
+  }
+  .text11 {
+    font-size: 10px;
+  }
+  .imagen1 {
+    width: 100%;
+  }
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('../../../assets/fonts/Raleway-Italic-VariableFont_wght.ttf');
+}
+   
+ .nombres {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.full-screen-title {
+/* Establece el ancho del título al 100% del ancho de su contenedor */
+  text-align: center;
+  margin: 2% 0;
+  font-family: 'Dancing Script', cursive;
+
+}
+
+.text5 {
+  font-family: 'Dancing Script', cursive;
+  color: #A840C3;
+  text-align: center;
+}
+
+.text6{
+  font-family: 'Dancing Script', cursive;
+  color: #585151B2;
+  margin: 0;
+}
+
+.text7{
+  margin: 2rem 3rem;
+  text-align: justify;
+  font-family: Raleway;
+}
+
+.text8 {
+  font-family: 'Dancing Script', cursive;
+  color: #A840C3;
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+
+.text9 {
+  text-align: justify;
+  font-family: Raleway;
+  margin: 2rem 1rem;
+}
+
+.text10 {
+  font-family: 'Dancing Script', cursive;
+  color: black;
+  font-size: 2rem;
+  margin: 2rem 3rem;
+}
+
+.text11 {
+  text-align: justify;
+  font-family: Raleway;
+  margin: 2.5rem 3rem;
+  color: white;
+}
+
+.columnas {
+width: 93%;
+margin: 2% 0;
+}
+
+#columna{
+  background-color: #A840C3;
+  margin-right: -3rem;
+}
+
+@font-face {
+font-family: 'Dancing Script';
+src: url('src/assets/fonts/DancingScript-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('../../../assets/fonts/Raleway-Italic-VariableFont_wght.ttf');
+}
+
 .card {
 margin-top: 1.5%;
 flex: 0 0 calc(100% / 3);
@@ -178,15 +301,6 @@ width: 100%;
 height: auto;
 }
 
-
-/* .carousel-inner.active {
-transform: translateX(-100%); Desplaza el carrusel hacia la izquierda para mostrar la siguiente imagen 
-} */
-
-/* .carousel-control::after {
-content: none !important;
-} */
-
 .carousel-control {
 position: absolute;
 top: 50%;
@@ -274,59 +388,52 @@ color: #000;
 text-align: center;
 }
 
-@media (max-width: 600px) {
-.text5 {
-  font-size: 14px;
+@media (max-width: 500px) {
+  
+  .text12 {
+    font-size: 15px;
+  }
+  .boton1{
+    font-size: 15px;
+  }
+  .titulo {
+    font-size: 15px;
+  }
+  .descripcion{
+    font-size: 10px;
+  }
+  .card2{
+    width: 90%;
+  }
+  .botones-container{
+    margin-right: 20%;
+  }
+  .botonesEs,
+  .botonesEs1 {
+    width: 100%;
+  }
+  .arrow-button {
+    width: 60%;
+  }
+  .card-header{
+    width: 90%;
+  }
+  .arrow-left{
+    margin-left: -6rem;
+  }
+  .arrow-right{
+    margin-right: -6rem;
+  }
+  
 }
-.text6 {
-  font-size: 12px;
-}
-.text7 {
-  font-size: 12px;
-}
-.text8 {
-  font-size: 20px;
-}
-.text9 {
-  font-size: 12px;
-}
-.text10 {
-  font-size: 20px;
-}
-.text11 {
-  font-size: 12px;
-}
-.text12 {
-  font-size: 12px;
-}
-.boton1{
-  font-size: 15px;
-}
-.titulo {
-  font-size: 20px;
-}
-.descripcion{
-  font-size: 12px;
-}
-.card2{
-  width: 80%;
-  margin-left: 9%;
-}
-.botones-container{
-  margin-right: 17%;
-}
-.card-header{
-  width: 100%;
-}
-}
-@media (max-width: 767px) {
+@media (max-width: 500px) {
   .carousel-inner {
     flex-wrap: wrap; /* Permite que los elementos del carrusel se envuelvan en pantallas pequeñas */
-    width: 95%;
+    width: 80%;
   }
 
   .carousel-item img {
-    width: 90%;
+    width: 60%;
     margin-top: 2rem;
   }
 
@@ -350,6 +457,11 @@ text-align: center;
   .carousel {
     margin-left: -1rem;
   }
+}
+
+@font-face {
+  font-family: 'Dancing Script';
+  src: url('src/assets/fonts/DancingScript-VariableFont_wght.ttf');
 }
 
 
