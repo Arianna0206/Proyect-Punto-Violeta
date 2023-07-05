@@ -27,12 +27,12 @@ export class SliderComponent implements OnInit, OnDestroy {
   selected = false;
   
   points: Point[] = [
-    {x: 50, y: 50, left: '30%', top: '9.6%', bottom: '0%', isPulsating: false, textTop: '1. Apoyo jurídico', textBottom: 'Consultorio Jurídico Gratuito UTPL', infoState: 0},
+    {x: 50, y: 50, left: '25%', top: '17%', bottom: '0%', isPulsating: false, textTop: '1. Apoyo jurídico', textBottom: 'Consultorio Jurídico Gratuito UTPL', infoState: 0},
     {x: 20, y: 20, left: '42%', top: '21%', bottom: '0%', isPulsating: false, textTop: '2. Apoyo psicológico', textBottom: 'Ministerio de la mujer', infoState: 0},
-    {x: 80, y: 80, left: '33.8%', top: '82.3%', bottom: '0%',  isPulsating: false, textTop: '3. Apoyo de trabajo social', textBottom: 'Ministerio de la mujer', infoState: 0},
-    {x: 80, y: 80, left: '57%', top: '20.5%', bottom: '0%',  isPulsating: false, textTop: '4. Apoyo médico', textBottom: 'Unidad especial del Hospital Isidro Ayora', infoState: 0},
-    {x: 80, y: 80, left: '90.8%', top: '52%', bottom: '0%',  isPulsating: false, textTop: '5.Apoyo para denunciar', textBottom: '', infoState: 0},
-    {x: 80, y: 80, left: '75%', top: '80%', bottom: '0%',  isPulsating: false, textTop: '6. Apoyo policial', textBottom: 'Orden de alejamiento y botón rojo de aviso en caso de peligro', infoState: 0}
+    {x: 80, y: 80, left: '33.8%', top: '80%', bottom: '0%',  isPulsating: false, textTop: '3. Apoyo de trabajo social', textBottom: 'Ministerio de la mujer', infoState: 0},
+    {x: 80, y: 80, left: '70%', top: '15%', bottom: '0%',  isPulsating: false, textTop: '4. Apoyo médico', textBottom: 'Unidad especial del Hospital Isidro Ayora', infoState: 0},
+    {x: 80, y: 80, left: '90.8%', top: '50%', bottom: '0%',  isPulsating: false, textTop: '5.Apoyo para denunciar', textBottom: '', infoState: 0},
+    {x: 80, y: 80, left: '75%', top: '78%', bottom: '0%',  isPulsating: false, textTop: '6. Apoyo policial', textBottom: 'Orden de alejamiento y botón rojo de aviso en caso de peligro', infoState: 0}
   ];
   
 
