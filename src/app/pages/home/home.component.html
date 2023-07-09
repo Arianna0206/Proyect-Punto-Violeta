@@ -1,21 +1,21 @@
 <div class="home">
-<div class="header">
-  <app-navbar [scrollEvent]="scrollEvent"></app-navbar>
-</div>
+  <div class="header">
+    <app-navbar [scrollEvent]="scrollEvent"></app-navbar>
+  </div>
 
-<div (window:scroll)="onScroll($event)">
-  <section class="home-slide">
-    <div class="slider">
+  <div (window:scroll)="onScroll($event)">
+    <section class="home-slide">
+      <div class="slider">
         <app-slider></app-slider>
-    </div>
+      </div>
 
-    <div class="contenido">
+      <div class="contenido">
         <app-content-card></app-content-card>
-    </div>
+      </div>
     </section>
-    </div>
+  </div>
 
-<div class="footer">
-  <app-footer></app-footer>
-</div>
+  <div class="footer">
+    <app-footer></app-footer>
+  </div>
 </div>

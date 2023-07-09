@@ -5,121 +5,155 @@
       <div class="row">
         <div class="col-md-6">
           <div class="quienes-header">
-            <button class="btn btn-primary boton1 text0" (click)="vaciarCardPrincipal()">></button>
-            <button *ngIf="cardVacia" class="btn btn-primary boton1 text0 d-sm-block" (click)="volverCardPrincipal()"><</button>
+            <button
+              class="btn btn-primary boton1 text0"
+              (click)="vaciarCardPrincipal()"
+            >
+              >
+            </button>
+            <button
+              *ngIf="cardVacia"
+              class="btn btn-primary boton1 text0 d-sm-block"
+              (click)="volverCardPrincipal()"
+            >
+              <
+            </button>
           </div>
           <div class="nested-card card1" *ngIf="cardVacia">
-            <div class="cardInformacion" >
-               <div class="informacion-wrapper">
+            <div class="cardInformacion">
+              <div class="informacion-wrapper">
                 <app-informacion></app-informacion>
-                </div>
+              </div>
             </div>
-           </div>
-       <div class="grid-container">
-          <div class="quienes-body" *ngIf="!cardVacia">
-          
-          <div class="quienes-header-content">
+          </div>
+          <div class="grid-container">
+            <div class="quienes-body" *ngIf="!cardVacia">
+              <div class="quienes-header-content">
                 <p class="text1">¿Quiénes somos?</p>
-            </div>
-            <p class="text2">Somos un espacio que se dedica a informar y 
-            concienciar sobre la violencia contra las mujeres y las niñas. 
-            Aquí encontrarás recursos y herramientas para entender y prevenir 
-            la violencia de género. También brindamos información sobre los 
-            derechos humanos y la importancia de promover una cultura de paz. 
-            Además, ofrecemos orientación y apoyo a las víctimas de violencia, 
-            proporcionando información sobre cómo buscar ayuda y cómo actuar 
-            en situaciones de violencia. Nuestro objetivo es contribuir a la 
-            construcción de una sociedad libre de violencia de género, promoviendo 
-            el respeto, la igualdad y el empoderamiento de las mujeres. 
-            ¡Únete a nosotros en esta lucha por un mundo más seguro y justo para 
-            todas las personas!</p>
+              </div>
+              <p class="text2">
+                Somos un espacio que se dedica a informar y concienciar sobre la
+                violencia contra las mujeres y las niñas. Aquí encontrarás
+                recursos y herramientas para entender y prevenir la violencia de
+                género. También brindamos información sobre los derechos humanos
+                y la importancia de promover una cultura de paz. Además,
+                ofrecemos orientación y apoyo a las víctimas de violencia,
+                proporcionando información sobre cómo buscar ayuda y cómo actuar
+                en situaciones de violencia. Nuestro objetivo es contribuir a la
+                construcción de una sociedad libre de violencia de género,
+                promoviendo el respeto, la igualdad y el empoderamiento de las
+                mujeres. ¡Únete a nosotros en esta lucha por un mundo más seguro
+                y justo para todas las personas!
+              </p>
 
-            <p class="text3"> Tipos de violencia de género en contra de la mujer </p>
-            
-             
-               <div class="row ">
-               <!-- card 1 imagen - Física -->
-                    <div class="col-md-4 col-sm-6 col-xs-12"> 
-                    <div class="card t1 ">
-                        <div class="card-body t3">
-                            <img src="../../assets/images/tipo1.png" alt="card-1" class="img-tipo1 img-responsive img-relative">
-                            <div class="card-text t5">
-                                <p class="tipos">Física</p>
-                            </div>
-                        </div>
+              <p class="text3">
+                Tipos de violencia de género en contra de la mujer
+              </p>
+
+              <div class="row">
+                <!-- card 1 imagen - Física -->
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                  <div class="card t1">
+                    <div class="card-body t3">
+                      <img
+                        src="../../assets/images/tipo1.png"
+                        alt="card-1"
+                        class="img-tipo1 img-responsive img-relative"
+                      />
+                      <div class="card-text t5">
+                        <p class="tipos">Física</p>
+                      </div>
                     </div>
+                  </div>
                 </div>
                 <!-- card 2 imagen - Sexual -->
-                <div class="col-md-4 col-sm-6 col-xs-12"> 
-                    <div class="card t1">
-                        <div class="card-body">
-                            <img src="../../assets/images/tipo2.png" alt="card-1" class="img-tipo1 img-responsive img-relative">
-                            <div class="card-text t5">
-                                <p class="tipos">Sexual</p>
-                            </div>
-                        </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                  <div class="card t1">
+                    <div class="card-body">
+                      <img
+                        src="../../assets/images/tipo2.png"
+                        alt="card-1"
+                        class="img-tipo1 img-responsive img-relative"
+                      />
+                      <div class="card-text t5">
+                        <p class="tipos">Sexual</p>
+                      </div>
                     </div>
+                  </div>
                 </div>
                 <!-- card 3 imagen - Psicológica -->
-                <div class="col-md-4 col-sm-6 col-xs-12"> 
-                    <div class="card t1">
-                        <div class="card-body">
-                            <img src="../../assets/images/tipo3.png" alt="card-1" class="img-tipo1 img-responsive img-relative"> 
-                            <div class="card-text t5">
-                                <p class="tipos">Psicológica</p>
-                            </div>   
-                        </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                  <div class="card t1">
+                    <div class="card-body">
+                      <img
+                        src="../../assets/images/tipo3.png"
+                        alt="card-1"
+                        class="img-tipo1 img-responsive img-relative"
+                      />
+                      <div class="card-text t5">
+                        <p class="tipos">Psicológica</p>
+                      </div>
                     </div>
+                  </div>
                 </div>
                 <!-- card 4 imagen - Económica -->
-                <div class="col-md-4 col-sm-6 col-xs-12"> 
-                    <div class="card t1">
-                        <div class="card-body">
-                            <img src="../../assets/images/tipo4.png" alt="card-1" class="img-tipo1 img-responsive img-relative"> 
-                            <div class="card-text t5">
-                                <p class="tipos">Económica</p>
-                            </div>   
-                        </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                  <div class="card t1">
+                    <div class="card-body">
+                      <img
+                        src="../../assets/images/tipo4.png"
+                        alt="card-1"
+                        class="img-tipo1 img-responsive img-relative"
+                      />
+                      <div class="card-text t5">
+                        <p class="tipos">Económica</p>
+                      </div>
                     </div>
+                  </div>
                 </div>
                 <!-- card 5 imagen - Obstétrica -->
                 <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="card t1">
-                        <div class="card-body">
-                            <img src="../../assets/images/tipo5.png" alt="card-1" class="img-tipo1 img-responsive img-relative">  
-                            <div class="card-text t5">
-                                <p class="tipos">Obstétrica</p>
-                            </div>  
-                        </div>
+                  <div class="card t1">
+                    <div class="card-body">
+                      <img
+                        src="../../assets/images/tipo5.png"
+                        alt="card-1"
+                        class="img-tipo1 img-responsive img-relative"
+                      />
+                      <div class="card-text t5">
+                        <p class="tipos">Obstétrica</p>
+                      </div>
                     </div>
+                  </div>
                 </div>
                 <!-- card 6 imagen - Acoso -->
                 <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="card t1">
-                        <div class="card-body">
-                            <img src="../../assets/images/tipo6.png" alt="card-1" class="img-tipo1 img-responsive img-relative"> 
-                            <div class="card-text t5">
-                                <p class="tipos">Acoso</p>
-                            </div>   
-                        </div>
+                  <div class="card t1">
+                    <div class="card-body">
+                      <img
+                        src="../../assets/images/tipo6.png"
+                        alt="card-1"
+                        class="img-tipo1 img-responsive img-relative"
+                      />
+                      <div class="card-text t5">
+                        <p class="tipos">Acoso</p>
+                      </div>
                     </div>
+                  </div>
                 </div>
-                
+              </div>
             </div>
-           
+          </div>
         </div>
-        
-        
+        <div class="col-md-6 mapeo" *ngIf="!cardVacia">
+          <img class="mapa" src="../../assets/images/mapa.png" alt="Imagen" />
         </div>
-    </div>
-     <div class="col-md-6 mapeo" *ngIf="!cardVacia">
-            <img class="mapa" src="../../assets/images/mapa.png" alt="Imagen">
-        </div>
-    </div>
-    <div class="recursos" *ngIf="!cardVacia">
+      </div>
+      <div class="recursos" *ngIf="!cardVacia">
         <app-graficas></app-graficas>
         <app-recursos></app-recursos>
         <app-collaborators-card></app-collaborators-card>
+      </div>
     </div>
   </div>
 </div>

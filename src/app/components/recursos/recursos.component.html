@@ -1,46 +1,64 @@
 <!-- CREACION DE CARDS DE LOS RECURSOS DISPONIBLES -->
-            <div class="grid-container" id="recursos">
-                <div class="row">
-                    <div class="col-lg-12 custom-size">
-                        <div class="card" id="principal">
-                            <div class="card-body text-center" id="contenido">
-                                <div class="row">
-                                    <div class="col-md-6 col-lg-3">
-                                        <div class="card bg-white recursos" id="card-0">
-                                            <div class="card-body text-center" id="card-1">
-                                                <h5 class="card-title" id="text1">Recursos Disponibles</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-lg-3">
-                                        <div class="card bg-white recursos" (click)="openForm('https://forms.gle/FMZjCYmtRPfBxgjC8')">
-                                            <div class="card-body text-center imagenes">
-                                                <img src="../../assets/images/rc1.png" alt="card-1" class="img-tipo1">
-                                                <h5 class="card-title text4">
-                                                <a>Denuncias</a>
-                                                </h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-lg-3">
-                                        <div class="card bg-white recursos" (click)="openForm('https://forms.gle/kNhZCrT23Md1A7kY7')">
-                                            <div class="card-body text-center imagenes">
-                                                <img src="../../assets/images/rc3.png" alt="card-1" class="img-tipo1">
-                                                <h5 class="card-title text4">Voluntariado</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-lg-3">
-                                        <div class="card bg-white recursos" routerLink="/galeria">
-                                            <div class="card-body text-center imagenes">
-                                                <img src="../../assets/images/rc4.png" alt="card-1" class="img-tipo1">
-                                                <h5 class="card-title text4">Galería</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+<div class="grid-container" id="recursos">
+  <div class="row">
+    <div class="col-lg-12 custom-size">
+      <div class="card" id="principal">
+        <div class="card-body text-center" id="contenido">
+          <div class="row">
+            <div class="col-md-6 col-lg-3">
+              <div class="card bg-white recursos" id="card-0">
+                <div class="card-body text-center" id="card-1">
+                  <h5 class="card-title" id="text1">Recursos Disponibles</h5>
                 </div>
+              </div>
             </div>
+            <div class="col-md-6 col-lg-3">
+              <div
+                class="card bg-white recursos"
+                (click)="openForm('https://forms.gle/FMZjCYmtRPfBxgjC8')"
+              >
+                <div class="card-body text-center imagenes">
+                  <img
+                    src="../../assets/images/rc1.png"
+                    alt="card-1"
+                    class="img-tipo1"
+                  />
+                  <h5 class="card-title text4">
+                    <a>Denuncias</a>
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div
+                class="card bg-white recursos"
+                (click)="openForm('https://forms.gle/kNhZCrT23Md1A7kY7')"
+              >
+                <div class="card-body text-center imagenes">
+                  <img
+                    src="../../assets/images/rc3.png"
+                    alt="card-1"
+                    class="img-tipo1"
+                  />
+                  <h5 class="card-title text4">Voluntariado</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="card bg-white recursos" routerLink="/galeria">
+                <div class="card-body text-center imagenes">
+                  <img
+                    src="../../assets/images/rc4.png"
+                    alt="card-1"
+                    class="img-tipo1"
+                  />
+                  <h5 class="card-title text4">Galería</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

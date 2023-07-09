@@ -1,8 +1,28 @@
 <div class="image-container" id="violeta">
-  <img src="../../assets/images/puntoVioleta.png" alt="slide-1" class="img-violeta img-responsive img-relative">
-  <div *ngFor="let point of points" [style.left]="point.left" [style.top]="point.top" [ngClass]="{'point': true, 'pulsate': point.isPulsating}" (click)="showInfo(point)" class="pulse"></div>
-  <div *ngFor="let point of points; let i = index" [ngClass]="{'info': true, 'visible': point.infoState > 0, 'clickable': point.infoState === 2}" [style.left]="point.left" [style.top]="point.top">
-    <div class="text-top">{{point.textTop}}</div>
-    <div class="text-bottom">{{point.textBottom}}</div>
+  <img
+    src="../../assets/images/puntoVioleta.png"
+    alt="slide-1"
+    class="img-violeta img-responsive img-relative"
+  />
+  <div
+    *ngFor="let point of points"
+    [style.left]="point.left"
+    [style.top]="point.top"
+    [ngClass]="{ point: true, pulsate: point.isPulsating }"
+    (click)="showInfo(point)"
+    class="pulse"
+  ></div>
+  <div
+    *ngFor="let point of points; let i = index"
+    [ngClass]="{
+      info: true,
+      visible: point.infoState > 0,
+      clickable: point.infoState === 2
+    }"
+    [style.left]="point.left"
+    [style.top]="point.top"
+  >
+    <div class="text-top">{{ point.textTop }}</div>
+    <div class="text-bottom">{{ point.textBottom }}</div>
   </div>
 </div>

@@ -7,14 +7,13 @@ import 'bootstrap';
   styleUrls: ['./informacion.component.css']
 })
 export class InformacionComponent implements AfterViewInit, OnInit {
-  @ViewChild('container') container!: ElementRef;
+  @ViewChild('container') container!: ElementRef; // Referencia al elemento con la etiqueta 'container' en el HTML
 
-  
-  
-  mostrarCards = true;
-  mostrarInfo = false;
-  mostrarCarousel = false;
+  mostrarCards = true;  // Variable que controla la visualización de las tarjetas
+  mostrarInfo = false; // Variable que controla la visualización de la información 
+  mostrarCarousel = false; // Variable que controla la visualización del carrusel
 
+  // Arreglo de objetos con información de las tarjetas
   cards = [
     { image: '../../assets/images/tipo1.png', title: 'Violencia física', description: 'Todo acto u omisión que produzca o pudiese producir daño o sufrimiento físico, dolor o muerte, así como cualquier otra forma de maltrato o agresión, castigos corporales, que afecte la integridad física, provocando o no lesiones, ya sean internas, externas o ambas, esto como resultado del uso de la fuerza o de cualquier objeto que se utilice con la intencionalidad de causar daño y de sus consecuencias, sin consideración del tiempo que se requiera para su recuperación.' },
     { image: '../../assets/images/tipo2.png', title: 'Violencia sexual', description: 'Toda acción que implique la vulneración o restricción del derecho a la integridad sexual y a decidir voluntariamente sobre su vida sexual y reproductiva, a través de amenazas, coerción, uso de la fuerza e intimidación, incluyendo la violación dentro del matrimonio o de otras relaciones vinculares y de parentesco, exista o no convivencia, la transmisión intencional de infecciones de transmisión sexual (ITS), así como la prostitución forzada, la trata con fines de explotación sexual, el abuso o acoso sexual, la esterilización forzada y otras prácticas análogas.' },
@@ -24,74 +23,75 @@ export class InformacionComponent implements AfterViewInit, OnInit {
     { image: '../../assets/images/tipo6.png', title: 'Violencia política', description: 'Es aquella violencia cometida por una persona o grupo de personas, directa o indirectamente, en contra de las mujeres que sean candidatas, militantes, electas, designadas o que ejerzan cargos públicos, defensoras de derechos humanos, feministas, lideresas políticas o sociales, o en contra de su familia. Esta violencia se orienta a acortar, suspender, impedir o restringir su accionar o el ejercicio de su cargo, o para inducirla u obligarla a que efectúe en contra de su voluntad una acción o incurra en una omisión, en el cumplimiento de sus funciones, incluida la falta de acceso a bienes públicos u otros recursos para el adecuado cumplimiento de sus funciones.' }
   ];
 
-  currentPageIndex = 0;
-  cardsPerPage = 3;
-  totalPages: number;
-  containerElement: HTMLElement;
+  currentPageIndex = 0; // Índice de la página actual
+  cardsPerPage = 3; // Número de tarjetas por página
+  totalPages: number; // Número total de páginas
+  containerElement: HTMLElement; // Elemento contenedor de las tarjetas
 
   constructor(private elementRef: ElementRef) {
-    this.totalPages = Math.ceil(this.cards.length / this.cardsPerPage);
-    this.containerElement = this.elementRef.nativeElement;
-    this.botonSeleccionado = 0;
+    this.totalPages = Math.ceil(this.cards.length / this.cardsPerPage); // Cálculo del número total de páginas
+    this.containerElement = this.elementRef.nativeElement; // Obtener el elemento nativo del componente
+    this.botonSeleccionado = 0; // Valor inicial del botón seleccionado
   }
   
 
   ngAfterViewInit() {
-    this.containerElement = this.elementRef.nativeElement.querySelector('.row');
+    this.containerElement = this.elementRef.nativeElement.querySelector('.row'); // Obtener el elemento con la clase 'row' en el HTML
     
   }
 
   previousPage(event: Event) {
     event.preventDefault(); // Evita el comportamiento predeterminado del formulario
     if (this.currentPageIndex > 0) {
-      this.currentPageIndex--;
-      this.scrollToCard();
+      this.currentPageIndex--; // Disminuir el índice de la página actual
+      this.scrollToCard(); // Desplazarse hacia la tarjeta correspondiente
     }
   }
 
   nextPage(event: Event) {
     event.preventDefault(); // Evita el comportamiento predeterminado del formulario
     if (this.currentPageIndex < this.totalPages - 1) {
-      this.currentPageIndex++;
-      this.scrollToCard();
+      this.currentPageIndex++; // Aumentar el índice de la página actual
+      this.scrollToCard(); // Desplazarse hacia la tarjeta correspondiente
     }
   }
 
   scrollToCard() {
-    const cardWidth = this.container.nativeElement.offsetWidth;
-    const scrollLeft = cardWidth * this.currentPageIndex;
-    this.container.nativeElement.scrollTo({
+    const cardWidth = this.container.nativeElement.offsetWidth; // Obtener el ancho de la tarjeta
+    const scrollLeft = cardWidth * this.currentPageIndex; // Calcular el desplazamiento horizontal necesario
+    this.container.nativeElement.scrollTo({ // Desplazar el elemento contenedor hacia la posición deseada
       left: scrollLeft,
-      behavior: 'smooth'
+      behavior: 'smooth' // Aplicar un desplazamiento suave
     });
   }
 
   isCardActive(card: any): boolean {
-    const activeCardIndex = this.currentPageIndex * this.cardsPerPage;
-    const cardIndex = this.cards.indexOf(card);
-    return cardIndex >= activeCardIndex && cardIndex < activeCardIndex + this.cardsPerPage;
+    const activeCardIndex = this.currentPageIndex * this.cardsPerPage; // Calcular el índice de la tarjeta activa
+    const cardIndex = this.cards.indexOf(card); // Obtener el índice de la tarjeta en el arreglo
+    return cardIndex >= activeCardIndex && cardIndex < activeCardIndex + this.cardsPerPage; // Verificar si la tarjeta está activa
   }
   
   mostrarTresCards() {
-    this.mostrarCards = true;
-    this.mostrarInfo = false;
-    this.mostrarCarousel = false;
+    this.mostrarCards = true; // Mostrar las tarjetas
+    this.mostrarInfo = false; // Ocultar la información
+    this.mostrarCarousel = false; // Ocultar el carrusel
   }
 
   mostrarInformacion() {
-    this.mostrarCards = false;
-    this.mostrarInfo = true;
-    this.mostrarCarousel = false;
+    this.mostrarCards = false; // Ocultar las tarjetas
+    this.mostrarInfo = true; // Mostrar la información
+    this.mostrarCarousel = false; // Ocultar el carrusel
   }
 
   mostrarCarrusel() {
-    this.mostrarCards = false;
-    this.mostrarInfo = false;
-    this.mostrarCarousel = true;
+    this.mostrarCards = false; // Ocultar las tarjetas
+    this.mostrarInfo = false; // Ocultar la información
+    this.mostrarCarousel = true; // Mostrar el carrusel
   }
   
-  botonSeleccionado: number | null = null;
+  botonSeleccionado: number | null = null; // Variable que almacena el índice del botón seleccionado (puede ser null)
 
+  // Arreglo de objetos con información de los botones
   informacionBotones = [
     { descripcion: 'Violencia ejercida en el núcleo familiar por parte del cónyuge, la pareja en unión de hecho, el conviviente, los ascendientes, los descendientes, las hermanas, los hermanos, los parientes por consanguinidad y afinidad y las personas con las que la víctima mantenga o haya mantenido vínculos familiares, íntimos, afectivos, conyugales, de convivencia, noviazgo o de cohabitación.' },
     { descripcion: 'Comprende el contexto de enseñanza y aprendizaje siendo ejecutada por docentes, personal administrativo, compañeros u otro miembro de la comunidad educativa de todos los niveles.' },
@@ -105,27 +105,25 @@ export class InformacionComponent implements AfterViewInit, OnInit {
     { descripcion: 'Se ejerce en situaciones de emergencia y desastres que promuevan las desigualdades entre hombres y mujeres, que pongan en riesgo la integridad física, psicológica y sexual de mujeres: niñas, adolescentes, jóvenes, adultas y adultas mayores.' }
   ];
 
-  mostrarContenido: boolean[] = [];
+  mostrarContenido: boolean[] = []; // Arreglo de booleanos para controlar la visualización del contenido
 
   ngOnInit() {
     this.botonSeleccionado = null; // Establecer el valor inicial a null
-    this.mostrarContenido = Array(this.informacionBotones.length).fill(false);
-    
+    this.mostrarContenido = Array(this.informacionBotones.length).fill(false); // Inicializar el arreglo con valores booleanos (false)
   }
   
   seleccionarBoton(index: number) {
     if (this.botonSeleccionado === index) {
-      this.botonSeleccionado = null;
-      this.mostrarContenido[index] = false;
+      this.botonSeleccionado = null; // Si el botón ya está seleccionado, se establece a null
+      this.mostrarContenido[index] = false; // Ocultar el contenido correspondiente al botón
     } else {
-      this.botonSeleccionado = index;
-      this.mostrarContenido.fill(false);
-      this.mostrarContenido[index] = true;
+      this.botonSeleccionado = index; // Establecer el botón seleccionado
+      this.mostrarContenido.fill(false); // Ocultar todos los contenidos
+      this.mostrarContenido[index] = true; // Mostrar el contenido correspondiente al botón seleccionado
     }
   }
 
-  
-
+  // Arreglo de objetos con información de las 40 imágenes
   images: { url: string, title: string, description: string }[] = [
     {
       url: '../assets/images/graficas/Imagen 1.png',
