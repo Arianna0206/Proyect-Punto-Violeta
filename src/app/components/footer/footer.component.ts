@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
 })
 
 export class FooterComponent {
-
+  openForm(url: string) {
+    window.open(url, "_blank"); // Abrir una nueva ventana o pestaña con la URL especificada
+  }
 }

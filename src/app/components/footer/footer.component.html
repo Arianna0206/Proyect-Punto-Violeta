@@ -4,7 +4,7 @@
       <div class="card-body">
         <h5 class="card-title"><span class="dot"></span>Punto Violeta</h5>
         <div class="row">
-          <div class="col-4">
+          <div class="col-3">
             <p class="card-text1">Teléfono: 911 ECU 911</p>
             <p class="card-text">Consultorio Jurídico Gratuito UTPL</p>
             <!-- <a href="#"> <i class="fab fa-instagram"></i> </a>
@@ -12,40 +12,38 @@
             <a href="#"> <i class="fab fa-facebook"></i> </a>
             <a href="#"> <i class="fab fa-twitter"></i> </a> --->
           </div>
-          <div class="col-4">
-            <h6 class="card-subtitle mb-2 text-muted">SOBRE NOSOTROS</h6>
-            <p class="card-text">
-              <i class="far fa-chevron-right fa-lg"></i> Servicios
-            </p>
-            <p class="card-text">
-              <i class="far fa-chevron-right fa-lg"></i> Proyectos
-            </p>
-            <p class="card-text">
-              <i class="far fa-chevron-right fa-lg"></i> Iniciativas
-            </p>
-            <p class="card-text">
-              <i class="far fa-chevron-right fa-lg"></i> Recursos
-            </p>
+          <div class="col-3">
+            <a href="https://liidutpl.ec/">
+              <img
+                class="imagen1"
+                src="../assets/images/LOGOS DE LIID -04 1.png"
+              />
+            </a>
           </div>
-          <div class="col-4">
+          <div class="col-3">
+            <a href="https://ascendere.utpl.edu.ec/">
+              <img
+                class="imagen2"
+                src="../assets/images/LOGOS ASCENDERE -05 1.png"
+              />
+            </a>
+          </div>
+          <div class="col-3 recursos">
             <h6 class="card-subtitle mb-2 text-muted">RECURSOS</h6>
-            <p class="card-text">
-              <i class="far fa-chevron-right fa-lg"></i> Consultorío UTPL
+            <p class="card-text" (click)="openForm('https://forms.gle/FMZjCYmtRPfBxgjC8')" >
+              <i class="fa fa-chevron-right"></i> Denuncias
             </p>
-            <p class="card-text">
-              <i class="far fa-chevron-right fa-lg"></i> Psicología
+            <p class="card-text" (click)="openForm('https://forms.gle/kNhZCrT23Md1A7kY7')">
+              <i class="fa fa-chevron-right"></i> Voluntariado
             </p>
-            <p class="card-text">
-              <i class="far fa-chevron-right fa-lg"></i> Asociaciones Aliadas
-            </p>
-            <p class="card-text">
-              <i class="far fa-chevron-right fa-lg"></i> Buzon Informativo
+            <p class="card-text" routerLink="/galeria">
+              <i class="fa fa-chevron-right"></i> Galeria
             </p>
           </div>
         </div>
         <div class="text-center my-3 copyright">
-          <div class="left">SENSIBILIZACÓN E IGUALDAD</div>
-          <div class="right">COPYRIGHT LIID | UTPL 2022</div>
+          <div class="left">SENSIBILIZACIÓN E IGUALDAD</div>
+          <div class="right">UTPL 2022</div>
         </div>
       </div>
     </div>

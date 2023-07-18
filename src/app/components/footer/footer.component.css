@@ -14,26 +14,25 @@ footer {
   grid-template-columns: auto 1fr;
   align-items: center;
   gap: 10px;
-  font-family: 'Dancing Script';
-  font-size: 2rem;
+  font-family: 'Raleway';
+  font-size: 1.5rem;
 }
 
 .card-text {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  cursor: pointer;
+  font-family: 'Raleway';
 }
 
 .card-text1 {
   margin-top: 5%;
+  font-family: 'Raleway';
 }
 
 .far {
   font-size: 1rem;
-}
-
-.col-4 {
-  font-family: Raleway;
 }
 
 @media (max-width: 768px) {
@@ -68,11 +67,11 @@ a {
   margin-right: 24.36px;
   font-size: 150%;
   color: #A915C5;
-  font-family: Raleway;
+  font-family: 'Raleway';
 }
 
 .row {
-  margin-left: 100px;
+  margin-left: 4rem;
 }
 
 .info {
@@ -96,7 +95,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: Raleway;
+  font-family: 'Raleway';
   font-size: 14px;
 }
 
